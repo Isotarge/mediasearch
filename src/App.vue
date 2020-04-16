@@ -1,28 +1,46 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header msg="Media Search"/>
+    <MoodSliders v-bind:sliders="sliders"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import MoodSliders from './components/MoodSliders.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    MoodSliders
+  },
+  data() {
+    return {
+      msg: "Media Search",
+      sliders: {
+        Feeling: [
+          {name: "happy",      low: "Sad",               high: "Happy"},
+          {name: "conformist", low: "Contrarian",        high: "Conformist"},
+          {name: "focused",    low: "Tired/Overwhelmed", high: "Focused"},
+        ],
+        Desire: [
+          {name: "happiness",  low: "Sad",               high: "Happy"},
+          {name: "anger",      low: "Peaceful",          high: "Angry"},
+          {name: "sexy",       low: "Sexn't",            high: "Sexy"},
+        ],
+        Style: [
+          {name: "lyrics",     low: "Instrumental",      high: "Lyrical"},
+          {name: "electronic", low: "Analog",            high: "Digital"},
+          {name: "melodic",    low: "Minimal",           high: "Melodic"},
+          {name: "age",        low: "New",               high: "Old"},
+          {name: "speed",      low: "Slow",              high: "Fast"},
+        ],
+      },
+    }
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
