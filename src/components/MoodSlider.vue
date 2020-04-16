@@ -2,9 +2,10 @@
     <div>
         Ignore
         <input type='checkbox' v-model="ignore" @change="onChange" >
-        <span>{{slider.low}}</span>
-        <input type='range' min='0' max='100' step='1' v-model="value" @change="onChange">
-        <span>{{slider.high}}</span>
+        <span class='moodLabel'>{{slider.low}}</span>
+        <input type='range' min='0' max='100' step='1' v-model.number="value" @change="onChangeSlider">
+        <span>{{value}}</span>
+        <span class='moodLabel'>{{slider.high}}</span>
     </div>
 </template>
 
@@ -12,19 +13,32 @@
 export default {
     name: "MoodSlider",
     props: {
-        category: String,
         slider: Object,
-        value: Number,
-        ignore: Boolean
+        value: {
+            default: 50,
+            type: Number,
+        },
+        ignore: {
+            default: true,
+            type: Boolean
+        },
     },
     methods: {
-        onChange: function() {
-            this.$emit('signal-recompute-recommendations', this.category, this.slider.name, parseInt(this.value), this.ignore);
+        onChange() {
+            this.$emit('signal-recompute-recommendations', this.slider.name, this.value, this.ignore);
+        },
+        onChangeSlider() {
+            this.ignore = false;
+            this.onChange(); // TODO: is there a way to call this automatically when flipping the boolean above?
         }
     }
 }
 </script>
 
 <style scoped>
-
+.moodLabel {
+    min-width: 90px;
+    display: inline-block;
+    padding: 8px;
+}
 </style>

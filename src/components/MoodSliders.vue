@@ -1,7 +1,7 @@
 <template>
     <div id="moodSliders">
         <div v-bind:key="sliderCategory.name" v-for="(sliderCategory, categoryName) in sliders">
-            <MoodSliderCategory v-bind:categoryName="categoryName" v-bind:sliders="sliderCategory"/>
+            <MoodSliderCategory v-bind:categoryName="categoryName" v-bind:sliders="sliderCategory" v-on:signal-recompute-recommendations="signalRecompute"/>
         </div>
     </div>
 </template>
@@ -13,9 +13,14 @@ export default {
     components: {
         MoodSliderCategory
     },
-    props: [
-        'sliders'
-    ],
+    props: {
+        sliders: Object
+    },
+    methods: {
+        signalRecompute(categoryName, sliderName, sliderValue, ignore) {
+            this.$emit('signal-recompute-recommendations', categoryName, sliderName, sliderValue, ignore);
+        }
+    }
 }
 </script>
 

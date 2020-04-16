@@ -1,8 +1,8 @@
 <template>
     <div>
-        <h2>{{ categoryName }}</h2>
+        <h2>{{ categoryName.charAt(0).toUpperCase() + categoryName.slice(1) }}</h2>
         <div div v-bind:key="slider.name" v-for="slider in sliders">
-            <MoodSlider v-bind:category="categoryName" v-bind:slider="slider"/>
+            <MoodSlider v-bind:slider="slider" v-on:signal-recompute-recommendations="signalRecompute"/>
         </div>
     </div>
 </template>
@@ -14,10 +14,15 @@ export default {
     components: {
         MoodSlider
     },
-    props: [
-        'categoryName',
-        'sliders'
-    ],
+    props: {
+        categoryName: String,
+        sliders: Object
+    },
+    methods: {
+        signalRecompute(sliderName, sliderValue, ignore) {
+            this.$emit('signal-recompute-recommendations', this.categoryName, sliderName, sliderValue, ignore);
+        }
+    }
 }
 </script>
 

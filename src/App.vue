@@ -1,8 +1,17 @@
 <template>
   <div id="app">
     <Header msg="Media Search"/>
-    <MoodSliders v-bind:sliders="sliders"/>
-    <RecommendationPanel v-bind:numRecommendations="numRecommendations"/>
+    <!--TODO: Proper CSS layout -->
+    <table>
+      <tr>
+        <td>
+          <MoodSliders v-bind:sliders="sliders" v-on:signal-recompute-recommendations="computeRecommendations"/>
+        </td>
+        <td>
+          <RecommendationPanel ref='RMPanel' v-bind:numRecommendations="numRecommendations" v-bind:MusicRecommendations="MusicRecommendations"/>
+        </td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -10,6 +19,7 @@
 import Header from './components/Header.vue'
 import MoodSliders from './components/MoodSliders.vue'
 import RecommendationPanel from './components/RecommendationPanel.vue'
+import MusicRecommendations from './MusicRecommendations.json'
 
 export default {
   name: 'App',
@@ -21,31 +31,32 @@ export default {
   data() {
     return {
       numRecommendations: 10,
+      MusicRecommendations: MusicRecommendations,
       msg: "Media Search",
       sliders: {
-        Feeling: [
-          {name: "happy",      low: "Sad",               high: "Happy"},
-          {name: "conformist", low: "Contrarian",        high: "Conformist"},
-          {name: "focused",    low: "Tired/Overwhelmed", high: "Focused"},
+        feeling: [
+          {name: "happy",      low: "Sad",          high: "Happy"},
+          {name: "conformist", low: "Contrarian",   high: "Conformist"},
+          {name: "focused",    low: "Tired",        high: "Focused"},
         ],
-        Desire: [
-          {name: "happiness",  low: "Sad",               high: "Happy"},
-          {name: "anger",      low: "Peaceful",          high: "Angry"},
-          {name: "sexy",       low: "Sexn't",            high: "Sexy"},
+        desire: [
+          {name: "happiness",  low: "Sad",          high: "Happy"},
+          {name: "anger",      low: "Peaceful",     high: "Angry"},
+          {name: "sexy",       low: "Sexn't",       high: "Sexy"},
         ],
-        Style: [
-          {name: "lyrics",     low: "Instrumental",      high: "Lyrical"},
-          {name: "electronic", low: "Analog",            high: "Digital"},
-          {name: "melodic",    low: "Minimal",           high: "Melodic"},
-          {name: "age",        low: "New",               high: "Old"},
-          {name: "speed",      low: "Slow",              high: "Fast"},
+        style: [
+          {name: "lyrics",     low: "Instrumental", high: "Lyrical"},
+          {name: "electronic", low: "Analog",       high: "Digital"},
+          {name: "melodic",    low: "Minimal",      high: "Melodic"},
+          {name: "age",        low: "New",          high: "Old"},
+          {name: "speed",      low: "Slow",         high: "Fast"},
         ],
       },
     }
   },
   methods: {
-    computeRecommendations() {
-      console.log("RECOMPUTING RECOMMENDATIONS");
+    computeRecommendations(categoryName, sliderName, sliderValue, ignore) {
+      this.$refs.RMPanel.updateSearchSetting(categoryName, sliderName, sliderValue, ignore);
     }
   }
 }
