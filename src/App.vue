@@ -2,21 +2,25 @@
   <div id="app">
     <Header msg="Media Search"/>
     <MoodSliders v-bind:sliders="sliders"/>
+    <RecommendationPanel v-bind:numRecommendations="numRecommendations"/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 import MoodSliders from './components/MoodSliders.vue'
+import RecommendationPanel from './components/RecommendationPanel.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    MoodSliders
+    MoodSliders,
+    RecommendationPanel
   },
   data() {
     return {
+      numRecommendations: 10,
       msg: "Media Search",
       sliders: {
         Feeling: [
@@ -37,6 +41,11 @@ export default {
           {name: "speed",      low: "Slow",              high: "Fast"},
         ],
       },
+    }
+  },
+  methods: {
+    computeRecommendations() {
+      console.log("RECOMPUTING RECOMMENDATIONS");
     }
   }
 }

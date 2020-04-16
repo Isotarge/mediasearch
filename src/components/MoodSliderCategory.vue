@@ -2,7 +2,7 @@
     <div>
         <h2>{{ categoryName }}</h2>
         <div div v-bind:key="slider.name" v-for="slider in sliders">
-            <MoodSlider v-bind:slider="slider"/>
+            <MoodSlider v-bind:category="categoryName" v-bind:slider="slider"/>
         </div>
     </div>
 </template>
@@ -14,7 +14,10 @@ export default {
     components: {
         MoodSlider
     },
-    props: ['categoryName', 'sliders'],
+    props: [
+        'categoryName',
+        'sliders'
+    ],
 }
 </script>
 

@@ -1,13 +1,27 @@
 <template>
     <div>
-        <span>{{slider.low}}</span><input name="" min='0' max='100' step='1' type='range'><span>{{slider.high}}</span>
+        Ignore
+        <input type='checkbox' v-model="ignore" @change="onChange" >
+        <span>{{slider.low}}</span>
+        <input type='range' min='0' max='100' step='1' v-model="value" @change="onChange">
+        <span>{{slider.high}}</span>
     </div>
 </template>
 
 <script>
 export default {
     name: "MoodSlider",
-    props: ["slider"]
+    props: {
+        category: String,
+        slider: Object,
+        value: Number,
+        ignore: Boolean
+    },
+    methods: {
+        onChange: function() {
+            this.$emit('signal-recompute-recommendations', this.category, this.slider.name, parseInt(this.value), this.ignore);
+        }
+    }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <div div v-bind:key="sliders.name" v-for="(sliders, categoryName) in sliders">
-            <MoodSliderCategory v-bind:categoryName="categoryName" v-bind:sliders="sliders"/>
+    <div id="moodSliders">
+        <div v-bind:key="sliderCategory.name" v-for="(sliderCategory, categoryName) in sliders">
+            <MoodSliderCategory v-bind:categoryName="categoryName" v-bind:sliders="sliderCategory"/>
         </div>
     </div>
 </template>
@@ -13,7 +13,9 @@ export default {
     components: {
         MoodSliderCategory
     },
-    props: ['sliders'],
+    props: [
+        'sliders'
+    ],
 }
 </script>
 
