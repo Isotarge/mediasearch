@@ -2293,9 +2293,9 @@
 		"name": "Paul Kelly",
 		"link": "https://www.youtube.com/watch?v=AV1FW_FCjx8&list=PL79e6OE3SrhV7u-G34cqaa0Hwh6kv8YzT",
 		"desire": {
-		"happiness": 100,
-		"anger": 0,
-		"sexy": 64
+			"happiness": 100,
+			"anger": 0,
+			"sexy": 64
 		},
 		"style": {
 			"lyrics": 100,
@@ -2308,7 +2308,7 @@
 	{
 		"name": "System of a Down - Hypnotize (Album)",
 		"link": "https://www.youtube.com/watch?v=-uNXY_LrOk8",
-			"feeling": {
+		"feeling": {
 			"happy": 22,
 			"conformist": 0,
 			"focused": 51
