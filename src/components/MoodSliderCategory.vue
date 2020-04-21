@@ -1,8 +1,8 @@
 <template>
   <div>
     <h2>{{ categoryName.charAt(0).toUpperCase() + categoryName.slice(1) }}</h2>
-    <div div v-bind:key="slider.name" v-for="slider in sliders">
-      <MoodSlider v-bind:slider="slider" v-on:signal-recompute-recommendations="signalRecompute" />
+    <div div :key="slider.name" v-for="slider in sliders">
+      <MoodSlider :slider="slider" @signal-recompute-recommendations="signalRecompute" />
     </div>
   </div>
 </template>

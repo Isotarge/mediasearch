@@ -6,15 +6,15 @@
       <tr>
         <td>
           <MoodSliders
-            v-bind:sliders="sliders"
-            v-on:signal-recompute-recommendations="computeRecommendations"
+            :sliders="sliders"
+            @signal-recompute-recommendations="computeRecommendations"
           />
         </td>
         <td>
           <RecommendationPanel
             ref="RMPanel"
-            v-bind:numRecommendations="numRecommendations"
-            v-bind:MusicRecommendations="MusicRecommendations"
+            :numRecommendations="numRecommendations"
+            :MusicRecommendations="MusicRecommendations"
           />
         </td>
       </tr>
@@ -40,6 +40,7 @@ export default {
       numRecommendations: 10,
       MusicRecommendations: MusicRecommendations,
       msg: "Media Search",
+      // TODO: Move this to external JSON
       sliders: {
         feeling: [
           { name: "happy", low: "Sad", high: "Happy" },

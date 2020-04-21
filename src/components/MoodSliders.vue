@@ -2,9 +2,9 @@
   <div id="moodSliders">
     <div v-bind:key="sliderCategory.name" v-for="(sliderCategory, categoryName) in sliders">
       <MoodSliderCategory
-        v-bind:categoryName="categoryName"
-        v-bind:sliders="sliderCategory"
-        v-on:signal-recompute-recommendations="signalRecompute"
+        :categoryName="categoryName"
+        :sliders="sliderCategory"
+        @signal-recompute-recommendations="signalRecompute"
       />
     </div>
   </div>

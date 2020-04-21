@@ -8,9 +8,17 @@
       v-model="numRecommendations"
       @change="searchMedia"
     />
-    <div v-html="searchOutput">
-      <!--<Recommendation/>-->
-    </div>
+    <table>
+      <thead>
+        <tr>
+          <td>Rank</td>
+          <td>Name</td>
+          <td>Score</td>
+        </tr>
+      </thead>
+      <tbody v-html="searchOutput"></tbody>
+    </table>
+    <textarea v-model="exportedSearchSettings"></textarea>
   </div>
 </template>
 
@@ -31,7 +39,8 @@ export default {
       },
       type: Object
     },
-    searchOutput: String
+    searchOutput: String,
+    exportedSearchSettings: String
   },
   methods: {
     updateSearchSetting(categoryName, sliderName, sliderValue, ignore) {
@@ -47,6 +56,36 @@ export default {
         value: sliderValue,
         ignore: ignore
       };
+      let exportedSearch = {
+        name: ""
+      };
+      for (let exportedCategoryName in this.currentSearchSettings) {
+        if (exportedCategoryName === "name") {
+          continue;
+        }
+        const searchSetting = this.currentSearchSettings[exportedCategoryName];
+        for (let exportedSliderName in searchSetting) {
+          const exportedSlider = searchSetting[exportedSliderName];
+          if (
+            Object.hasOwnProperty.call(exportedSlider, "ignore") &&
+            Object.hasOwnProperty.call(exportedSlider, "value")
+          ) {
+            if (!exportedSlider.ignore) {
+              if (
+                !Object.hasOwnProperty.call(
+                  exportedSearch,
+                  exportedCategoryName
+                )
+              ) {
+                exportedSearch[exportedCategoryName] = {};
+              }
+              exportedSearch[exportedCategoryName][exportedSliderName] =
+                exportedSlider.value;
+            }
+          }
+        }
+      }
+      this.exportedSearchSettings = JSON.stringify(exportedSearch, null, "\t");
       this.searchMedia();
     },
     checkSingleStat(media, categoryName, sliderName) {
@@ -54,7 +93,7 @@ export default {
         if (
           Object.prototype.hasOwnProperty.call(media[categoryName], sliderName)
         ) {
-          var difference =
+          let difference =
             this.currentSearchSettings[categoryName][sliderName].value -
             media[categoryName][sliderName];
           difference = Math.abs(difference);
@@ -90,43 +129,35 @@ export default {
       return false;
     },
     matchMedia(media) {
-      var score = 0;
-      var scores = 0;
-      for (var categoryName in this.currentSearchSettings) {
-        for (var sliderName in this.currentSearchSettings[categoryName]) {
+      let score = 0;
+      let numScores = 0;
+      for (let categoryName in this.currentSearchSettings) {
+        for (let sliderName in this.currentSearchSettings[categoryName]) {
           if (this.isEnabled(categoryName, sliderName)) {
-            scores++;
+            numScores++;
             score += this.checkSingleStat(media, categoryName, sliderName);
           }
         }
       }
-      if (scores > 0) {
+      if (numScores > 0) {
         // Average difference
-        return score / scores;
+        return score / numScores;
       }
       return 0;
     },
     searchMedia() {
-      var matches = [];
-      var _this = this;
+      let matches = [];
+      let _this = this;
       this.MusicRecommendations.forEach(function(media) {
-        var score = _this.matchMedia(media);
+        const score = _this.matchMedia(media);
         matches.push([media, score]);
       });
       matches.sort(function(a, b) {
         return a[1] - b[1];
       });
-      var matchString = "";
-      matchString += "<table>";
-      matchString += "<thead>\n";
-      matchString += "	<tr>\n";
-      matchString += "		<td>Rank</td>\n";
-      matchString += "		<td>Name</td>\n";
-      matchString += "		<td>Score</td>\n";
-      matchString += "	</tr>\n";
-      matchString += "</thead>\n";
-      matchString += "<tbody>\n";
-      var numMatches = 0;
+      let matchString = "";
+
+      let numMatches = 0;
       matches.forEach(function(match) {
         if (numMatches < _this.numRecommendations) {
           numMatches++;
@@ -146,8 +177,6 @@ export default {
           matchString += "</tr>\n";
         }
       });
-      matchString += "</tbody>\n";
-      matchString += "</table>";
       this.searchOutput = matchString;
     }
   }
