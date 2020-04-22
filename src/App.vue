@@ -65,7 +65,13 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+textarea {
+  font-family:'Courier New', Courier, monospace;
+}
 #panel-container {
   display: grid;
   grid-template-columns: 50% 50%;

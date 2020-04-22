@@ -1,6 +1,7 @@
 <template>
   <div id="recommendationPanel">
-    Number of recommendations:
+    <label>Number of recommendations</label>
+    &nbsp;
     <input
       type="number"
       min="1"
@@ -8,17 +9,21 @@
       v-model="numRecommendations"
       @change="searchMedia"
     />
-    <table>
-      <thead>
-        <tr>
-          <td>Rank</td>
-          <td>Name</td>
-          <td>Score</td>
-        </tr>
-      </thead>
-      <tbody v-html="searchOutput"></tbody>
-    </table>
-    <textarea v-model="exportedSearchSettings"></textarea>
+    <div id="recommendation-container">
+      <div id="recommendation-table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Name</th>
+              <th>Score</th>
+            </tr>
+          </thead>
+          <tbody v-html="searchOutput"></tbody>
+        </table>
+      </div>
+      <textarea v-model="exportedSearchSettings"></textarea>
+    </div>
   </div>
 </template>
 
@@ -184,4 +189,14 @@ export default {
 </script>
 
 <style scoped>
+#recommendation-container {
+  height: 100%;
+  display: grid;
+  grid-template-rows: 50% 50%;
+}
+#recommendation-table-container {
+  max-height: 100%;
+  height: auto;
+  overflow: scroll;
+}
 </style>
