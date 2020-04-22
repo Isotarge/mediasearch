@@ -1,24 +1,14 @@
 <template>
   <div id="app">
     <Header msg="Media Search" />
-    <!--TODO: Proper CSS layout -->
-    <table>
-      <tr>
-        <td>
-          <MoodSliders
-            :sliders="sliders"
-            @signal-recompute-recommendations="computeRecommendations"
-          />
-        </td>
-        <td>
-          <RecommendationPanel
-            ref="RMPanel"
-            :numRecommendations="numRecommendations"
-            :MusicRecommendations="MusicRecommendations"
-          />
-        </td>
-      </tr>
-    </table>
+    <div id="panel-container">
+      <MoodSliders :sliders="sliders" @signal-recompute-recommendations="computeRecommendations" />
+      <RecommendationPanel
+        ref="RMPanel"
+        :numRecommendations="numRecommendations"
+        :MusicRecommendations="MusicRecommendations"
+      />
+    </div>
   </div>
 </template>
 
@@ -75,5 +65,9 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+#panel-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
 </style>
