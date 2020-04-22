@@ -62,7 +62,8 @@ export default {
         ignore: ignore
       };
       let exportedSearch = {
-        name: ""
+        name: "",
+        link: "",
       };
       for (let exportedCategoryName in this.currentSearchSettings) {
         if (exportedCategoryName === "name") {
@@ -166,20 +167,20 @@ export default {
       matches.forEach(function(match) {
         if (numMatches < _this.numRecommendations) {
           numMatches++;
-          matchString += "<tr>\n";
-          matchString += "	<td>" + numMatches + "</td>\n";
+          matchString += "<tr>";
+          matchString += "<td>" + numMatches + "</td>";
           if (Object.prototype.hasOwnProperty.call(match[0], "link")) {
             matchString +=
-              "	<td><a href='" +
+              "<td><a href='" +
               match[0].link +
               "' target='_blank'>" +
               match[0].name +
               "</a></td>\n";
           } else {
-            matchString += "	<td>" + match[0].name + "</td>\n";
+            matchString += "<td>" + match[0].name + "</td>";
           }
-          matchString += "	<td>" + Math.floor(match[1] * 100) / 100 + "</td>\n";
-          matchString += "</tr>\n";
+          matchString += "<td>" + Math.floor(match[1] * 100) / 100 + "</td>";
+          matchString += "</tr>";
         }
       });
       this.searchOutput = matchString;
