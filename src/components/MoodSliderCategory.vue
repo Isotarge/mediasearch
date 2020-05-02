@@ -16,7 +16,7 @@ export default {
   },
   props: {
     categoryName: String,
-    sliders: Object
+    sliders: Array
   },
   methods: {
     signalRecompute(sliderName, sliderValue, ignore) {

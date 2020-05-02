@@ -19,7 +19,18 @@
               <th>Score</th>
             </tr>
           </thead>
-          <tbody v-html="searchOutput"></tbody>
+          <tbody>
+          <tr v-for='(match, index) in matches' :key='index'>
+          <td>{{ index + 1 }}</td>
+          <template v-if='Object.prototype.hasOwnProperty.call(match[0], "link")'>
+            <td><a :href="match[0].link" target='_blank'>{{match[0].name}}</a></td>
+          </template>
+          <template v-else>
+            <td>{{ match[0].name }}</td>
+          </template>
+          <td>{{ Math.floor(match[1] * 100) / 100 }}</td>
+          </tr>
+          </tbody>
         </table>
       </div>
       <textarea v-model="exportedSearchSettings"></textarea>
@@ -35,8 +46,14 @@ export default {
   components: {
     //Recommendation
   },
+  data: function() {
+    return {
+      numRecommendations: 10,
+      matches: [],
+      exportedSearchSettings: '',
+    };
+  },
   props: {
-    numRecommendations: Number,
     MusicRecommendations: Array,
     currentSearchSettings: {
       default() {
@@ -44,8 +61,6 @@ export default {
       },
       type: Object
     },
-    searchOutput: String,
-    exportedSearchSettings: String
   },
   methods: {
     updateSearchSetting(categoryName, sliderName, sliderValue, ignore) {
@@ -161,29 +176,10 @@ export default {
       matches.sort(function(a, b) {
         return a[1] - b[1];
       });
-      let matchString = "";
-
-      let numMatches = 0;
-      matches.forEach(function(match) {
-        if (numMatches < _this.numRecommendations) {
-          numMatches++;
-          matchString += "<tr>";
-          matchString += "<td>" + numMatches + "</td>";
-          if (Object.prototype.hasOwnProperty.call(match[0], "link")) {
-            matchString +=
-              "<td><a href='" +
-              match[0].link +
-              "' target='_blank'>" +
-              match[0].name +
-              "</a></td>\n";
-          } else {
-            matchString += "<td>" + match[0].name + "</td>";
-          }
-          matchString += "<td>" + Math.floor(match[1] * 100) / 100 + "</td>";
-          matchString += "</tr>";
-        }
-      });
-      this.searchOutput = matchString;
+      this.matches = [];
+      for (let i = 0; i < Math.min(this.numRecommendations, matches.length); i += 1) {
+        this.matches.push(matches[i]);
+      }
     }
   }
 };

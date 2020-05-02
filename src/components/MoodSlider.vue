@@ -12,16 +12,14 @@
 <script>
 export default {
   name: "MoodSlider",
+  data: function() {
+    return {
+      value: 50,
+      ignore: true,
+    };
+  },
   props: {
     slider: Object,
-    value: {
-      default: 50,
-      type: Number
-    },
-    ignore: {
-      default: true,
-      type: Boolean
-    }
   },
   methods: {
     onChange() {
@@ -34,7 +32,7 @@ export default {
     },
     onChangeSlider() {
       this.ignore = false;
-      this.onChange(); // TODO: is there a way to call this automatically when flipping the boolean above?
+      this.onChange();
     }
   }
 };
