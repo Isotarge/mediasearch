@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Header msg="Media Search (Vite Test)" />
+    <Header msg="Media Search" />
     <div id="panel-container">
       <MoodSliders :sliders="sliders" @signal-recompute-recommendations="computeRecommendations" />
       <RecommendationPanel
