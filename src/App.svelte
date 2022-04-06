@@ -9,15 +9,15 @@
 
   function updateSearchSetting(e) {
     const {
-      detail: { categoryName, name: sliderName, value: sliderValue, ignore },
+      detail: { categoryName, name, value, ignore },
     } = e;
 
     if (!(categoryName in currentSearchSettings)) {
       currentSearchSettings[categoryName] = {};
     }
-    currentSearchSettings[categoryName][sliderName] = {
-      value: sliderValue,
-      ignore: ignore,
+    currentSearchSettings[categoryName][name] = {
+      value,
+      ignore,
     };
     updateExportedSearchTextarea();
     searchMedia();
@@ -34,16 +34,15 @@
       name: "",
       link: "",
     };
-    for (const exportedCategoryName in currentSearchSettings) {
-      const searchSetting = currentSearchSettings[exportedCategoryName];
-      for (const exportedSliderName in searchSetting) {
-        if (isEnabled(exportedCategoryName, exportedSliderName)) {
-          const exportedSlider = searchSetting[exportedSliderName];
-          if (!(exportedCategoryName in exportedSearch)) {
-            exportedSearch[exportedCategoryName] = {};
+    for (const categoryName in currentSearchSettings) {
+      const searchSetting = currentSearchSettings[categoryName];
+      for (const sliderName in searchSetting) {
+        if (isEnabled(categoryName, sliderName)) {
+          const exportedSlider = searchSetting[sliderName];
+          if (!(categoryName in exportedSearch)) {
+            exportedSearch[categoryName] = {};
           }
-          exportedSearch[exportedCategoryName][exportedSliderName] =
-            exportedSlider.value;
+          exportedSearch[categoryName][sliderName] = exportedSlider.value;
         }
       }
     }
