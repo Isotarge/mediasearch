@@ -1,0 +1,44 @@
+{
+	"sliders": {
+		"attention": [{
+			"name": "foreground",
+			"low": "Background",
+			"high": "Foreground"
+		}, {
+			"name": "surprise",
+			"low": "Predictable",
+			"high": "Surprising"
+		}, {
+			"name": "story",
+			"low": "Self-contained",
+			"high": "Story Driven"
+		}],
+		"style": [{
+			"name": "wholesome",
+			"low": "Dark",
+			"high": "Wholesome"
+		}, {
+			"name": "obvious",
+			"low": "Subtle",
+			"high": "Obvious"
+		}, {
+			"name": "pace",
+			"low": "Slow",
+			"high": "Fast"
+		}, {
+			"name": "action",
+			"low": "Not",
+			"high": "Action Packed"
+		}],
+		"humour": [{
+			"name": "toilet",
+			"low": "Clean",
+			"high": "Crude"
+		}, {
+			"name": "slapstick",
+			"low": "Dry",
+			"high": "Slapstick"
+		}]
+	},
+	"recommendations": []
+}

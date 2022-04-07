@@ -1,6 +1,16 @@
 <script>
   import MoodSliderCategory from "./components/MoodSliderCategory.svelte";
-  import { sliders, recommendations } from "./Music.json";
+  import Music from "./Music.json";
+  import TV from "./TV.json";
+
+  let mediaType = "Music";
+  const media = {
+    Music,
+    TV,
+  };
+
+  $: sliders = media[mediaType].sliders;
+  $: recommendations = media[mediaType].recommendations;
 
   let numRecommendations = 10;
   let matches = [];
@@ -105,6 +115,11 @@
 </header>
 <main id="panel-container">
   <div>
+    <select bind:value={mediaType}>
+      {#each Object.entries(media) as media}
+      <option>{media[0]}</option>
+      {/each}
+    </select>
     {#each Object.entries(sliders) as slider}
       <MoodSliderCategory
         categoryName={slider[0]}
