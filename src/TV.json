@@ -10,8 +10,8 @@
 			"high": "Surprising"
 		}, {
 			"name": "story",
-			"low": "Self-contained",
-			"high": "Story Driven"
+			"low": "Episodic",
+			"high": "Serial"
 		}],
 		"style": [{
 			"name": "wholesome",
@@ -26,19 +26,1194 @@
 			"low": "Slow",
 			"high": "Fast"
 		}, {
-			"name": "action",
-			"low": "Not",
-			"high": "Action Packed"
+			"name": "animated",
+			"low": "Live Action",
+			"high": "Animated"
+		}, {
+			"name": "improv",
+			"low": "Scripted",
+			"high": "Improvised"
+		}, {
+			"name": "violence",
+			"low": "Pacifist",
+			"high": "Violent"
+		}, {
+			"name": "relationship",
+			"low": "Lonely",
+			"high": "Romantic"
+		}, {
+			"name": "age",
+			"low": "New",
+			"high": "Old"
+		}, {
+			"name": "demographic",
+			"low": "Young",
+			"high": "Adult"
 		}],
 		"humour": [{
 			"name": "toilet",
 			"low": "Clean",
-			"high": "Crude"
+			"high": "Body/Sex"
 		}, {
-			"name": "slapstick",
-			"low": "Dry",
-			"high": "Slapstick"
+			"name": "surreal",
+			"low": "Real",
+			"high": "Surreal"
+		}, {
+			"name": "wordplay",
+			"low": "Punn't",
+			"high": "Wordplay"
+		}, {
+			"name": "political",
+			"low": "Nonpolitical",
+			"high": "Political"
+		}, {
+			"name": "satirical",
+			"low": "Sincere",
+			"high": "Satirical"
+		}, {
+			"name": "observational",
+			"low": "Ignorant",
+			"high": "Observational"
 		}]
 	},
-	"recommendations": []
+	"recommendations": [{
+			"name": "7 Days Out",
+			"attention": {
+				"story": 0,
+				"surprise": 75,
+				"foreground": 80
+			},
+			"style": {
+				"wholesome": 70,
+				"obvious": 90,
+				"pace": 25,
+				"animated": 10,
+				"improv": 90,
+				"violence": 0,
+				"relationship": 10,
+				"age": 15,
+				"demographic": 90
+			},
+			"humour": {
+				"toilet": 15,
+				"surreal": 0,
+				"wordplay": 25,
+				"political": 0,
+				"satirical": 20,
+				"observational": 100
+			}
+		}, {
+			"name": "Adventures of Sonic The Hedgehog",
+			"attention": {
+				"foreground": 90,
+				"surprise": 5,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 80,
+				"obvious": 100,
+				"pace": 100,
+				"animated": 100,
+				"improv": 0,
+				"violence": 20,
+				"age": 80,
+				"demographic": 10
+			},
+			"humour": {
+				"toilet": 10,
+				"surreal": 80,
+				"wordplay": 80,
+				"political": 0,
+				"satirical": 30
+			}
+		}, {
+			"name": "After Life",
+			"attention": {
+				"foreground": 100,
+				"surprise": 90,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 0,
+				"obvious": 20,
+				"pace": 30,
+				"animated": 0,
+				"improv": 0,
+				"violence": 10,
+				"relationship": 60,
+				"age": 10,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 50,
+				"surreal": 5,
+				"wordplay": 30,
+				"political": 55,
+				"satirical": 35,
+				"observational": 75
+			}
+		}, {
+			"name": "All Aussie Adventures",
+			"attention": {
+				"foreground": 0,
+				"surprise": 0,
+				"story": 5
+			},
+			"style": {
+				"wholesome": 85,
+				"obvious": 100,
+				"pace": 70,
+				"animated": 0,
+				"violence": 90,
+				"relationship": 10,
+				"age": 70,
+				"demographic": 25
+			},
+			"humour": {
+				"toilet": 90,
+				"surreal": 70,
+				"wordplay": 90,
+				"political": 0,
+				"satirical": 100,
+				"observational": 0
+			}
+		}, {
+			"name": "An Idiot Abroad",
+			"humour": {
+				"observational": 100,
+				"satirical": 100,
+				"political": 30,
+				"wordplay": 60,
+				"surreal": 15,
+				"toilet": 75
+			},
+			"style": {
+				"relationship": 20,
+				"age": 40,
+				"demographic": 100,
+				"violence": 20,
+				"improv": 70,
+				"animated": 0,
+				"pace": 25,
+				"obvious": 75,
+				"wholesome": 35
+			},
+			"attention": {
+				"story": 30,
+				"surprise": 60,
+				"foreground": 40
+			}
+		}, {
+			"name": "Angela Anaconda",
+			"attention": {
+				"foreground": 30,
+				"surprise": 10,
+				"story": 10
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 90,
+				"pace": 70,
+				"animated": 80,
+				"improv": 0,
+				"violence": 20,
+				"relationship": 10,
+				"age": 60,
+				"demographic": 0
+			},
+			"humour": {
+				"toilet": 20,
+				"surreal": 60,
+				"wordplay": 65,
+				"political": 10,
+				"satirical": 30,
+				"observational": 60
+			}
+		}, {
+			"name": "Angry Boys",
+			"attention": {
+				"foreground": 30,
+				"surprise": 5,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 20,
+				"obvious": 100,
+				"animated": 0,
+				"improv": 0,
+				"violence": 15,
+				"relationship": 0,
+				"demographic": 75
+			},
+			"humour": {
+				"toilet": 80,
+				"surreal": 30,
+				"wordplay": 21,
+				"political": 0,
+				"satirical": 100,
+				"observational": 0
+			}
+		}, {
+			"name": "Aunty Donna's Big Ol' House of Fun",
+			"attention": {
+				"foreground": 65,
+				"surprise": 90,
+				"story": 70
+			},
+			"style": {
+				"wholesome": 30,
+				"obvious": 90,
+				"pace": 80,
+				"animated": 20,
+				"improv": 75,
+				"violence": 20,
+				"relationship": 0,
+				"age": 0,
+				"demographic": 50
+			},
+			"humour": {
+				"toilet": 90,
+				"surreal": 100,
+				"wordplay": 75,
+				"political": 10,
+				"satirical": 80,
+				"observational": 60
+			}
+		}, {
+			"name": "Black Mirror",
+			"attention": {
+				"foreground": 100,
+				"surprise": 75,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 0,
+				"obvious": 40,
+				"pace": 20,
+				"animated": 24,
+				"improv": 0,
+				"violence": 90,
+				"relationship": 80,
+				"age": 10,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 80,
+				"surreal": 80,
+				"wordplay": 10,
+				"political": 90,
+				"satirical": 40,
+				"observational": 90
+			}
+		}, {
+			"name": "Bob's Burgers",
+			"attention": {
+				"foreground": 35,
+				"surprise": 30,
+				"story": 15
+			},
+			"style": {
+				"wholesome": 70,
+				"obvious": 35,
+				"pace": 45,
+				"animated": 100,
+				"improv": 10,
+				"violence": 20,
+				"relationship": 60,
+				"age": 20,
+				"demographic": 40
+			},
+			"humour": {
+				"toilet": 60,
+				"surreal": 70,
+				"wordplay": 70,
+				"political": 5,
+				"satirical": 66,
+				"observational": 66
+			}
+		}, {
+			"name": "Bojack Horseman",
+			"attention": {
+				"foreground": 100,
+				"surprise": 90,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 10,
+				"obvious": 50,
+				"pace": 40,
+				"animated": 100,
+				"improv": 0,
+				"violence": 10,
+				"relationship": 30,
+				"age": 10,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 65,
+				"surreal": 65,
+				"wordplay": 30,
+				"political": 80,
+				"satirical": 75,
+				"observational": 90
+			}
+		}, {
+			"name": "Veep",
+			"attention": {
+				"foreground": 90,
+				"story": 80,
+				"surprise": 40
+			},
+			"humour": {
+				"political": 100,
+				"wordplay": 90,
+				"surreal": 0,
+				"toilet": 90,
+				"satirical": 100,
+				"observational": 100
+			},
+			"style": {
+				"demographic": 100,
+				"age": 10,
+				"relationship": 75,
+				"violence": 10,
+				"improv": 0,
+				"animated": 0,
+				"pace": 80,
+				"obvious": 60,
+				"wholesome": 25
+			}
+		}, {
+			"name": "Breaking Bad",
+			"attention": {
+				"foreground": 100,
+				"surprise": 70,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 0,
+				"obvious": 85,
+				"pace": 20,
+				"animated": 0,
+				"improv": 0,
+				"violence": 100,
+				"relationship": 20,
+				"age": 25,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 75,
+				"surreal": 10,
+				"wordplay": 10,
+				"political": 25,
+				"satirical": 5,
+				"observational": 50
+			}
+		},
+		{
+			"name": "Clarkson's Farm",
+			"link": "https://en.wikipedia.org/wiki/Clarkson%27s_Farm",
+			"attention": {
+				"foreground": 85,
+				"surprise": 55,
+				"story": 95
+			},
+			"style": {
+				"wholesome": 85,
+				"obvious": 80,
+				"pace": 35,
+				"animated": 0,
+				"improv": 75,
+				"violence": 30,
+				"relationship": 25,
+				"age": 0,
+				"demographic": 85
+			},
+			"humour": {
+				"toilet": 60,
+				"surreal": 20,
+				"wordplay": 75,
+				"political": 60,
+				"satirical": 20,
+				"observational": 75
+			}
+		},
+		{
+			"name": "Comedians in Cars Getting Coffee",
+			"link": "",
+			"attention": {
+				"foreground": 15,
+				"surprise": 15,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 75,
+				"obvious": 90,
+				"pace": 40,
+				"animated": 0,
+				"improv": 65,
+				"violence": 5,
+				"relationship": 75,
+				"age": 10,
+				"demographic": 75
+			},
+			"humour": {
+				"toilet": 25,
+				"surreal": 25,
+				"wordplay": 60,
+				"political": 5,
+				"satirical": 85,
+				"observational": 90
+			}
+		},
+		{
+			"name": "Cunk on Britain",
+			"attention": {
+				"foreground": 100,
+				"surprise": 60,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 30,
+				"obvious": 40,
+				"pace": 100,
+				"animated": 0,
+				"improv": 10,
+				"violence": 10,
+				"relationship": 10,
+				"age": 10,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 40,
+				"surreal": 70,
+				"wordplay": 100,
+				"political": 80,
+				"satirical": 100,
+				"observational": 10
+			}
+		},
+		{
+			"name": "Curb Your Enthusiasm",
+			"humour": {
+				"observational": 90,
+				"satirical": 90,
+				"political": 75,
+				"wordplay": 75,
+				"surreal": 35,
+				"toilet": 90
+			},
+			"style": {
+				"demographic": 100,
+				"age": 30,
+				"relationship": 40,
+				"violence": 30,
+				"improv": 80,
+				"animated": 0,
+				"pace": 55,
+				"obvious": 35,
+				"wholesome": 30
+			},
+			"attention": {
+				"story": 95,
+				"surprise": 70,
+				"foreground": 90
+			}
+		},
+		{
+			"name": "Da Ali G Show",
+			"attention": {
+				"foreground": 75,
+				"surprise": 25,
+				"story": 15
+			},
+			"style": {
+				"wholesome": 40,
+				"obvious": 5,
+				"pace": 60,
+				"animated": 0,
+				"improv": 50,
+				"violence": 20,
+				"relationship": 15,
+				"age": 65,
+				"demographic": 85
+			},
+			"humour": {
+				"toilet": 100,
+				"surreal": 40,
+				"wordplay": 100,
+				"political": 100,
+				"satirical": 100,
+				"observational": 75
+			}
+		},
+		{
+			"name": "Dilbert",
+			"attention": {
+				"foreground": 70,
+				"surprise": 65,
+				"story": 60
+			},
+			"style": {
+				"wholesome": 40,
+				"obvious": 45,
+				"pace": 65,
+				"animated": 100,
+				"improv": 0,
+				"violence": 15,
+				"relationship": 10,
+				"age": 65,
+				"demographic": 50
+			},
+			"humour": {
+				"toilet": 25,
+				"surreal": 60,
+				"wordplay": 65,
+				"political": 60,
+				"satirical": 90,
+				"observational": 80
+			}
+		},
+		{
+			"name": "Family Guy",
+			"attention": {
+				"foreground": 35,
+				"surprise": 40,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 30,
+				"obvious": 100,
+				"pace": 100,
+				"animated": 90,
+				"improv": 0,
+				"violence": 100,
+				"relationship": 20,
+				"age": 40,
+				"demographic": 40
+			},
+			"humour": {
+				"toilet": 100,
+				"surreal": 100,
+				"wordplay": 10,
+				"political": 40,
+				"satirical": 100,
+				"observational": 25
+			}
+		},
+		{
+			"name": "Flight of the Conchords",
+			"attention": {
+				"foreground": 80,
+				"surprise": 50,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 30,
+				"obvious": 40,
+				"pace": 40,
+				"animated": 15,
+				"improv": 25,
+				"violence": 10,
+				"relationship": 50,
+				"age": 35,
+				"demographic": 65
+			},
+			"humour": {
+				"toilet": 40,
+				"surreal": 80,
+				"wordplay": 100,
+				"political": 10,
+				"satirical": 70,
+				"observational": 60
+			}
+		},
+		{
+			"name": "Friends",
+			"style": {
+				"wholesome": 80,
+				"obvious": 80,
+				"relationship": 95,
+				"demographic": 50,
+				"age": 70,
+				"violence": 20,
+				"improv": 0,
+				"animated": 0,
+				"pace": 60
+			},
+			"humour": {
+				"toilet": 75,
+				"surreal": 20,
+				"wordplay": 15,
+				"political": 10,
+				"satirical": 30,
+				"observational": 70
+			}
+		},
+		{
+			"name": "Gavin and Stacey",
+			"attention": {
+				"foreground": 100,
+				"surprise": 80,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 70,
+				"obvious": 15,
+				"pace": 30,
+				"animated": 0,
+				"improv": 0,
+				"violence": 0,
+				"relationship": 100,
+				"age": 40,
+				"demographic": 90
+			},
+			"humour": {
+				"toilet": 60,
+				"surreal": 10,
+				"observational": 100,
+				"satirical": 20,
+				"political": 15,
+				"wordplay": 85
+			}
+		},
+		{
+			"name": "How It's Made",
+			"attention": {
+				"foreground": 0,
+				"surprise": 0,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 100,
+				"obvious": 100,
+				"pace": 5,
+				"animated": 0,
+				"improv": 0,
+				"violence": 0,
+				"relationship": 0,
+				"age": 50,
+				"demographic": 50
+			},
+			"humour": {
+				"toilet": 0,
+				"surreal": 0,
+				"wordplay": 10,
+				"political": 0,
+				"satirical": 0,
+				"observational": 100
+			}
+		},
+		{
+			"name": "Jackass",
+			"humour": {
+				"toilet": 100,
+				"surreal": 30,
+				"wordplay": 0,
+				"political": 20,
+				"satirical": 90,
+				"observational": 0
+			},
+			"style": {
+				"demographic": 25,
+				"age": 45,
+				"relationship": 0,
+				"violence": 100,
+				"improv": 90,
+				"animated": 0,
+				"pace": 70,
+				"wholesome": 15,
+				"obvious": 100
+			},
+			"attention": {
+				"foreground": 0,
+				"surprise": 0,
+				"story": 0
+			}
+		},
+		{
+			"name": "James May: Oh Cook!",
+			"attention": {
+				"foreground": 0,
+				"surprise": 0,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 85,
+				"pace": 15,
+				"animated": 0,
+				"improv": 40,
+				"violence": 0,
+				"relationship": 30,
+				"age": 10,
+				"demographic": 75
+			},
+			"humour": {
+				"toilet": 10,
+				"surreal": 5,
+				"wordplay": 80,
+				"political": 20,
+				"satirical": 25,
+				"observational": 65
+			}
+		},
+		{
+			"name": "James May: The Reassembler",
+			"attention": {
+				"foreground": 0,
+				"surprise": 25,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 85,
+				"obvious": 85,
+				"pace": 10,
+				"animated": 0,
+				"improv": 70,
+				"violence": 0,
+				"relationship": 0,
+				"age": 15,
+				"demographic": 80
+			},
+			"humour": {
+				"toilet": 5,
+				"surreal": 0,
+				"wordplay": 85,
+				"political": 5,
+				"satirical": 20,
+				"observational": 100
+			}
+		},
+		{
+			"name": "Kath & Kim",
+			"style": {
+				"wholesome": 70,
+				"obvious": 30,
+				"pace": 70,
+				"animated": 0,
+				"improv": 0,
+				"violence": 9,
+				"relationship": 65,
+				"age": 60,
+				"demographic": 60
+			},
+			"attention": {
+				"foreground": 60,
+				"surprise": 75,
+				"story": 90
+			},
+			"humour": {
+				"toilet": 80,
+				"surreal": 20,
+				"wordplay": 100,
+				"political": 30,
+				"satirical": 100,
+				"observational": 100
+			}
+		},
+		{
+			"name": "Kenny vs. Spenny",
+			"style": {
+				"wholesome": 0,
+				"obvious": 50,
+				"pace": 40,
+				"animated": 5,
+				"improv": 75,
+				"violence": 90,
+				"relationship": 10,
+				"age": 50,
+				"demographic": 75
+			},
+			"attention": {
+				"foreground": 30,
+				"surprise": 25,
+				"story": 0
+			},
+			"humour": {
+				"toilet": 100,
+				"surreal": 15,
+				"wordplay": 0,
+				"political": 20,
+				"satirical": 95,
+				"observational": 10
+			}
+		},
+		{
+			"name": "Metaloclypse",
+			"style": {
+				"violence": 100,
+				"relationship": 15,
+				"age": 20,
+				"demographic": 100,
+				"animated": 100,
+				"improv": 0,
+				"pace": 45,
+				"obvious": 40,
+				"wholesome": 0
+			},
+			"attention": {
+				"story": 80,
+				"surprise": 60,
+				"foreground": 25
+			},
+			"humour": {
+				"toilet": 90,
+				"surreal": 70,
+				"wordplay": 70,
+				"political": 20,
+				"satirical": 90,
+				"observational": 20
+			}
+		},
+		{
+			"name": "Mr. Bean",
+			"attention": {
+				"foreground": 10,
+				"surprise": 80,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 100,
+				"obvious": 100,
+				"pace": 50,
+				"animated": 0,
+				"improv": 0,
+				"violence": 40,
+				"relationship": 10,
+				"age": 90,
+				"demographic": 10
+			},
+			"humour": {
+				"toilet": 15,
+				"surreal": 25,
+				"wordplay": 0,
+				"political": 0,
+				"satirical": 85,
+				"observational": 20
+			}
+		},
+		{
+			"name": "Mythbusters",
+			"attention": {
+				"foreground": 10,
+				"surprise": 20,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 100,
+				"pace": 70,
+				"animated": 15,
+				"improv": 70,
+				"violence": 85,
+				"relationship": 40,
+				"age": 45,
+				"demographic": 20
+			},
+			"humour": {
+				"toilet": 50,
+				"surreal": 15,
+				"wordplay": 40,
+				"political": 15,
+				"satirical": 0,
+				"observational": 100
+			}
+		},
+		{
+			"name": "Nathan For You",
+			"attention": {
+				"foreground": 100,
+				"surprise": 90,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 20,
+				"obvious": 0,
+				"pace": 75,
+				"animated": 0,
+				"improv": 80,
+				"violence": 20,
+				"relationship": 20,
+				"age": 10,
+				"demographic": 85
+			},
+			"humour": {
+				"toilet": 90,
+				"surreal": 35,
+				"wordplay": 60,
+				"political": 100,
+				"satirical": 100,
+				"observational": 100
+			}
+		},
+		{
+			"name": "Peep Show",
+			"attention": {
+				"foreground": 90,
+				"surprise": 80,
+				"story": 100
+			},
+			"style": {
+				"wholesome": 15,
+				"obvious": 70,
+				"pace": 25,
+				"animated": 0,
+				"improv": 0,
+				"violence": 20,
+				"relationship": 70,
+				"age": 35,
+				"demographic": 100
+			},
+			"humour": {
+				"toilet": 85,
+				"surreal": 20,
+				"wordplay": 70,
+				"political": 25,
+				"satirical": 100,
+				"observational": 75
+			}
+		},
+		{
+			"name": "Seinfeld",
+			"attention": {
+				"foreground": 30,
+				"surprise": 70,
+				"story": 75
+			},
+			"style": {
+				"wholesome": 35,
+				"obvious": 40,
+				"pace": 60,
+				"animated": 0,
+				"improv": 0,
+				"violence": 10,
+				"relationship": 80,
+				"age": 70,
+				"demographic": 50
+			},
+			"humour": {
+				"toilet": 85,
+				"surreal": 20,
+				"wordplay": 65,
+				"political": 20,
+				"satirical": 100,
+				"observational": 90
+			}
+		},
+		{
+			"name": "Spider-Man (1967)",
+			"attention": {
+				"foreground": 0,
+				"surprise": 0,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 100,
+				"pace": 75,
+				"animated": 100,
+				"improv": 0,
+				"violence": 65,
+				"relationship": 20,
+				"age": 95,
+				"demographic": 0
+			},
+			"humour": {
+				"toilet": 5,
+				"surreal": 85,
+				"wordplay": 20,
+				"political": 0,
+				"satirical": 0,
+				"observational": 15
+			}
+		},
+		{
+			"name": "Spongebob Squarepants",
+			"attention": {
+				"story": 5,
+				"surprise": 85,
+				"foreground": 75
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 100,
+				"pace": 100,
+				"animated": 100,
+				"improv": 0,
+				"violence": 20,
+				"relationship": 0,
+				"demographic": 0,
+				"age": 35
+			},
+			"humour": {
+				"toilet": 15,
+				"surreal": 100,
+				"wordplay": 40,
+				"political": 5,
+				"satirical": 100,
+				"observational": 50
+			}
+		},
+		{
+			"name": "The Big Bang Theory",
+			"attention": {
+				"foreground": 30,
+				"story": 85,
+				"surprise": 30
+			},
+			"style": {
+				"wholesome": 50,
+				"obvious": 90,
+				"pace": 60,
+				"animated": 5,
+				"improv": 0,
+				"violence": 5,
+				"relationship": 60,
+				"age": 30,
+				"demographic": 40
+			},
+			"humour": {
+				"toilet": 30,
+				"surreal": 10,
+				"wordplay": 35,
+				"political": 15,
+				"satirical": 60,
+				"observational": 55
+			}
+		},
+		{
+			"name": "The IT Crowd",
+			"humour": {
+				"toilet": 60,
+				"surreal": 20,
+				"wordplay": 90,
+				"political": 10,
+				"satirical": 90,
+				"observational": 70
+			},
+			"attention": {
+				"foreground": 65,
+				"surprise": 70,
+				"story": 25
+			},
+			"style": {
+				"wholesome": 60,
+				"obvious": 70,
+				"pace": 90,
+				"animated": 10,
+				"improv": 0,
+				"violence": 25,
+				"relationship": 25,
+				"age": 40,
+				"demographic": 50
+			}
+		},
+		{
+			"name": "The Mighty Boosh",
+			"attention": {
+				"foreground": 100,
+				"surprise": 100,
+				"story": 60
+			},
+			"style": {
+				"wholesome": 15,
+				"obvious": 20,
+				"pace": 55,
+				"animated": 40,
+				"improv": 30,
+				"violence": 15,
+				"relationship": 30,
+				"age": 45,
+				"demographic": 30
+			},
+			"humour": {
+				"surreal": 100,
+				"toilet": 10,
+				"wordplay": 100,
+				"political": 5,
+				"satirical": 10,
+				"observational": 15
+			}
+		},
+		{
+			"name": "The Simpsons",
+			"attention": {
+				"foreground": 70,
+				"story": 0,
+				"surprise": 100
+			},
+			"style": {
+				"animated": 100,
+				"pace": 90,
+				"wholesome": 35,
+				"obvious": 35,
+				"improv": 0,
+				"violence": 55,
+				"relationship": 60
+			},
+			"humour": {
+				"observational": 100,
+				"satirical": 50,
+				"political": 100,
+				"wordplay": 35,
+				"surreal": 60,
+				"toilet": 55
+			}
+		},
+		{
+			"name": "The Twilight Zone",
+			"style": {
+				"wholesome": 35,
+				"obvious": 55,
+				"pace": 10,
+				"age": 100,
+				"demographic": 60,
+				"relationship": 30,
+				"violence": 15,
+				"improv": 0,
+				"animated": 10
+			},
+			"humour": {
+				"toilet": 5,
+				"surreal": 85,
+				"wordplay": 5,
+				"political": 25,
+				"satirical": 40,
+				"observational": 40
+			},
+			"attention": {
+				"foreground": 60,
+				"surprise": 60,
+				"story": 0
+			}
+		},
+		{
+			"name": "Wallace & Gromit",
+			"attention": {
+				"foreground": 75,
+				"surprise": 35,
+				"story": 0
+			},
+			"style": {
+				"wholesome": 90,
+				"obvious": 90,
+				"pace": 60,
+				"animated": 100,
+				"improv": 0,
+				"violence": 20,
+				"relationship": 30,
+				"age": 75,
+				"demographic": 0
+			},
+			"humour": {
+				"toilet": 0,
+				"surreal": 50,
+				"wordplay": 70,
+				"political": 5,
+				"satirical": 15,
+				"observational": 75
+			}
+		}
+	]
 }
