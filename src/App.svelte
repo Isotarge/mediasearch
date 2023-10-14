@@ -151,8 +151,8 @@
 <main id="panel-container">
   <div>
     <select bind:value={mediaType}>
-      {#each Object.entries(media) as media}
-        <option>{media[0]}</option>
+      {#each Object.entries(media) as _media}
+        <option>{_media[0]}</option>
       {/each}
     </select>
     <label for="editMode">Edit Mode</label>
