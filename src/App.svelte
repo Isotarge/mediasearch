@@ -142,8 +142,8 @@
 <header>
   <h1>Media Search</h1>
   <p>
-    This tool will take your current feelings, desires, style preferences, and
-    spit out some media it thinks you'll like.
+    This tool will take your feelings, desires, and style preferences, and
+    recommend some media it thinks you'll like.
     <br />It was written by Isotarge as an exercise in learning
     <strike>Vue</strike> Svelte. Hope you enjoy!
   </p>
