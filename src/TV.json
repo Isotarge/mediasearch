@@ -78,6 +78,7 @@
 	},
 	"recommendations": [{
 			"name": "7 Days Out",
+			"link": "https://en.wikipedia.org/wiki/7_Days_Out",
 			"attention": {
 				"story": 0,
 				"surprise": 75,
@@ -104,6 +105,7 @@
 			}
 		}, {
 			"name": "Adventures of Sonic The Hedgehog",
+			"link": "https://en.wikipedia.org/wiki/Adventures_of_Sonic_the_Hedgehog",
 			"attention": {
 				"foreground": 90,
 				"surprise": 5,
@@ -128,6 +130,7 @@
 			}
 		}, {
 			"name": "After Life",
+			"link": "https://en.wikipedia.org/wiki/After_Life_(TV_series)",
 			"attention": {
 				"foreground": 100,
 				"surprise": 90,
@@ -154,6 +157,7 @@
 			}
 		}, {
 			"name": "All Aussie Adventures",
+			"link": "https://en.wikipedia.org/wiki/All_Aussie_Adventures",
 			"attention": {
 				"foreground": 0,
 				"surprise": 0,
@@ -179,6 +183,7 @@
 			}
 		}, {
 			"name": "An Idiot Abroad",
+			"link": "https://en.wikipedia.org/wiki/An_Idiot_Abroad",
 			"humour": {
 				"observational": 100,
 				"satirical": 100,
@@ -205,6 +210,7 @@
 			}
 		}, {
 			"name": "Angela Anaconda",
+			"link": "https://en.wikipedia.org/wiki/Angela_Anaconda",
 			"attention": {
 				"foreground": 30,
 				"surprise": 10,
@@ -231,6 +237,7 @@
 			}
 		}, {
 			"name": "Angry Boys",
+			"link": "https://en.wikipedia.org/wiki/Angry_Boys",
 			"attention": {
 				"foreground": 30,
 				"surprise": 5,
@@ -255,6 +262,7 @@
 			}
 		}, {
 			"name": "Aunty Donna's Big Ol' House of Fun",
+			"link": "https://en.wikipedia.org/wiki/Aunty_Donna%27s_Big_Ol%27_House_of_Fun",
 			"attention": {
 				"foreground": 65,
 				"surprise": 90,
@@ -281,6 +289,7 @@
 			}
 		}, {
 			"name": "Black Mirror",
+			"link": "https://en.wikipedia.org/wiki/Black_Mirror",
 			"attention": {
 				"foreground": 100,
 				"surprise": 75,
@@ -307,6 +316,7 @@
 			}
 		}, {
 			"name": "Bob's Burgers",
+			"link": "https://en.wikipedia.org/wiki/Bob%27s_Burgers",
 			"attention": {
 				"foreground": 35,
 				"surprise": 30,
@@ -333,6 +343,7 @@
 			}
 		}, {
 			"name": "Bojack Horseman",
+			"link": "https://en.wikipedia.org/wiki/BoJack_Horseman",
 			"attention": {
 				"foreground": 100,
 				"surprise": 90,
@@ -359,6 +370,7 @@
 			}
 		}, {
 			"name": "Veep",
+			"link": "https://en.wikipedia.org/wiki/Veep",
 			"attention": {
 				"foreground": 90,
 				"story": 80,
@@ -385,6 +397,7 @@
 			}
 		}, {
 			"name": "Breaking Bad",
+			"link": "https://en.wikipedia.org/wiki/Breaking_Bad",
 			"attention": {
 				"foreground": 100,
 				"surprise": 70,
@@ -440,7 +453,7 @@
 		},
 		{
 			"name": "Comedians in Cars Getting Coffee",
-			"link": "",
+			"link": "https://en.wikipedia.org/wiki/Comedians_in_Cars_Getting_Coffee",
 			"attention": {
 				"foreground": 15,
 				"surprise": 15,
@@ -468,6 +481,7 @@
 		},
 		{
 			"name": "Cunk on Britain",
+			"link": "https://en.wikipedia.org/wiki/Cunk_on_Britain",
 			"attention": {
 				"foreground": 100,
 				"surprise": 60,
@@ -495,6 +509,7 @@
 		},
 		{
 			"name": "Curb Your Enthusiasm",
+			"link": "https://en.wikipedia.org/wiki/Curb_Your_Enthusiasm",
 			"humour": {
 				"observational": 90,
 				"satirical": 90,
@@ -522,6 +537,7 @@
 		},
 		{
 			"name": "Da Ali G Show",
+			"link": "https://en.wikipedia.org/wiki/Da_Ali_G_Show",
 			"attention": {
 				"foreground": 75,
 				"surprise": 25,
@@ -549,6 +565,7 @@
 		},
 		{
 			"name": "Dilbert",
+			"link": "https://en.wikipedia.org/wiki/Dilbert_(TV_series)",
 			"attention": {
 				"foreground": 70,
 				"surprise": 65,
@@ -576,6 +593,7 @@
 		},
 		{
 			"name": "Family Guy",
+			"link": "https://en.wikipedia.org/wiki/Family_Guy",
 			"attention": {
 				"foreground": 35,
 				"surprise": 40,
@@ -603,6 +621,7 @@
 		},
 		{
 			"name": "Flight of the Conchords",
+			"link": "https://en.wikipedia.org/wiki/Flight_of_the_Conchords_(TV_series)",
 			"attention": {
 				"foreground": 80,
 				"surprise": 50,
@@ -630,6 +649,7 @@
 		},
 		{
 			"name": "Friends",
+			"link": "https://en.wikipedia.org/wiki/Friends",
 			"style": {
 				"wholesome": 80,
 				"obvious": 80,
@@ -652,6 +672,7 @@
 		},
 		{
 			"name": "Gavin and Stacey",
+			"link": "https://en.wikipedia.org/wiki/Gavin_%26_Stacey",
 			"attention": {
 				"foreground": 100,
 				"surprise": 80,
@@ -679,6 +700,7 @@
 		},
 		{
 			"name": "How It's Made",
+			"link": "https://en.wikipedia.org/wiki/How_It%27s_Made",
 			"attention": {
 				"foreground": 0,
 				"surprise": 0,
@@ -706,6 +728,7 @@
 		},
 		{
 			"name": "Jackass",
+			"link": "https://en.wikipedia.org/wiki/Jackass_(franchise)",
 			"humour": {
 				"toilet": 100,
 				"surreal": 30,
@@ -733,6 +756,7 @@
 		},
 		{
 			"name": "James May: Oh Cook!",
+			"link": "https://en.wikipedia.org/wiki/James_May:_Oh_Cook",
 			"attention": {
 				"foreground": 0,
 				"surprise": 0,
@@ -760,6 +784,7 @@
 		},
 		{
 			"name": "James May: The Reassembler",
+			"link": "https://en.wikipedia.org/wiki/James_May:_The_Reassembler",
 			"attention": {
 				"foreground": 0,
 				"surprise": 25,
@@ -787,6 +812,7 @@
 		},
 		{
 			"name": "Kath & Kim",
+			"link": "https://en.wikipedia.org/wiki/Kath_%26_Kim",
 			"style": {
 				"wholesome": 70,
 				"obvious": 30,
@@ -814,6 +840,7 @@
 		},
 		{
 			"name": "Kenny vs. Spenny",
+			"link": "https://en.wikipedia.org/wiki/Kenny_vs._Spenny",
 			"style": {
 				"wholesome": 0,
 				"obvious": 50,
@@ -841,6 +868,7 @@
 		},
 		{
 			"name": "Metaloclypse",
+			"link": "https://en.wikipedia.org/wiki/Metalocalypse",
 			"style": {
 				"violence": 100,
 				"relationship": 15,
@@ -868,6 +896,7 @@
 		},
 		{
 			"name": "Mr. Bean",
+			"link": "https://en.wikipedia.org/wiki/Mr._Bean",
 			"attention": {
 				"foreground": 10,
 				"surprise": 80,
@@ -895,6 +924,7 @@
 		},
 		{
 			"name": "Mythbusters",
+			"link": "https://en.wikipedia.org/wiki/MythBusters",
 			"attention": {
 				"foreground": 10,
 				"surprise": 20,
@@ -922,6 +952,7 @@
 		},
 		{
 			"name": "Nathan For You",
+			"link": "https://en.wikipedia.org/wiki/Nathan_for_You",
 			"attention": {
 				"foreground": 100,
 				"surprise": 90,
@@ -949,6 +980,7 @@
 		},
 		{
 			"name": "Peep Show",
+			"link": "https://en.wikipedia.org/wiki/Peep_Show_(British_TV_series)",
 			"attention": {
 				"foreground": 90,
 				"surprise": 80,
@@ -976,6 +1008,7 @@
 		},
 		{
 			"name": "Seinfeld",
+			"link": "https://en.wikipedia.org/wiki/Seinfeld",
 			"attention": {
 				"foreground": 30,
 				"surprise": 70,
@@ -1003,6 +1036,7 @@
 		},
 		{
 			"name": "Spider-Man (1967)",
+			"link": "https://en.wikipedia.org/wiki/Spider-Man_(1967_TV_series)",
 			"attention": {
 				"foreground": 0,
 				"surprise": 0,
@@ -1030,6 +1064,7 @@
 		},
 		{
 			"name": "Spongebob Squarepants",
+			"link": "https://en.wikipedia.org/wiki/SpongeBob_SquarePants",
 			"attention": {
 				"story": 5,
 				"surprise": 85,
@@ -1057,6 +1092,7 @@
 		},
 		{
 			"name": "The Big Bang Theory",
+			"link": "https://en.wikipedia.org/wiki/The_Big_Bang_Theory",
 			"attention": {
 				"foreground": 30,
 				"story": 85,
@@ -1084,6 +1120,7 @@
 		},
 		{
 			"name": "The IT Crowd",
+			"link": "https://en.wikipedia.org/wiki/The_IT_Crowd",
 			"humour": {
 				"toilet": 60,
 				"surreal": 20,
@@ -1111,6 +1148,7 @@
 		},
 		{
 			"name": "The Mighty Boosh",
+			"link": "https://en.wikipedia.org/wiki/The_Mighty_Boosh_(TV_series)",
 			"attention": {
 				"foreground": 100,
 				"surprise": 100,
@@ -1138,6 +1176,7 @@
 		},
 		{
 			"name": "The Simpsons",
+			"link": "https://en.wikipedia.org/wiki/The_Simpsons",
 			"attention": {
 				"foreground": 70,
 				"story": 0,
@@ -1163,6 +1202,7 @@
 		},
 		{
 			"name": "The Twilight Zone",
+			"link": "https://en.wikipedia.org/wiki/The_Twilight_Zone_(1959_TV_series)",
 			"style": {
 				"wholesome": 35,
 				"obvious": 55,
@@ -1190,6 +1230,7 @@
 		},
 		{
 			"name": "Wallace & Gromit",
+			"link": "https://en.wikipedia.org/wiki/Wallace_and_Gromit",
 			"attention": {
 				"foreground": 75,
 				"surprise": 35,

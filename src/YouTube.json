@@ -1,0 +1,417 @@
+{
+	"sliders": {
+		"attention": [
+			{
+				"name": "foreground",
+				"low": "Background",
+				"high": "Foreground"
+			},
+			{
+				"name": "surprise",
+				"low": "Predictable",
+				"high": "Surprising"
+			},
+			{
+				"name": "story",
+				"low": "Episodic",
+				"high": "Serial"
+			},
+			{
+				"name": "length",
+				"low": "Shortform",
+				"high": "Longform"
+			},
+            {
+                "name": "pace",
+                "low": "Slow",
+                "high": "Fast"
+            }
+		],
+		"style": [
+            {
+                "name": "excite",
+				"low": "Relaxing",
+				"high": "Exciting"
+			},
+            {
+                "name": "think",
+				"low": "Feeling",
+				"high": "Thinking"
+			},
+            {
+                "name": "wholesome",
+                "low": "Dark",
+                "high": "Wholesome"
+            },
+			{
+				"name": "animated",
+				"low": "Live Action",
+				"high": "Animated"
+			},
+			{
+				"name": "improv",
+				"low": "Scripted",
+				"high": "Improvised"
+			},
+			{
+				"name": "demographic",
+				"low": "Young",
+				"high": "Adult"
+			},
+            {
+                "name": "observational",
+                "low": "Ignorant",
+                "high": "Observational"
+            }
+		],
+		"humour": [
+			{
+				"name": "toilet",
+				"low": "Clean",
+				"high": "Body/Sex"
+			},
+			{
+				"name": "surreal",
+				"low": "Real",
+				"high": "Surreal"
+			},
+			{
+				"name": "wordplay",
+				"low": "Punn't",
+				"high": "Wordplay"
+			},
+			{
+				"name": "political",
+				"low": "Nonpolitical",
+				"high": "Political"
+			},
+			{
+				"name": "satirical",
+				"low": "Sincere",
+				"high": "Satirical"
+			}
+		]
+	},
+	"recommendations": [
+        {
+            "name": "Good Mythical Morning",
+            "link": "https://www.youtube.com/@GoodMythicalMorning",
+            "attention": {
+                "foreground": 37,
+                "surprise": 13,
+                "story": 14,
+                "length": 40,
+                "pace": 44
+            },
+            "style": {
+                "wholesome": 76,
+                "animated": 0,
+                "improv": 61,
+                "excite": 21,
+                "demographic": 33,
+                "observational": 71
+            },
+            "humour": {
+                "toilet": 43,
+                "surreal": 15,
+                "wordplay": 52,
+                "political": 7,
+                "satirical": 25
+            }
+        },
+        {
+            "name": "Aunty Donna",
+            "link": "https://www.youtube.com/@TheAuntyDonnaChannel",
+            "attention": {
+                "foreground": 90,
+                "surprise": 100,
+                "story": 0,
+                "length": 0,
+                "pace": 75
+            },
+            "style": {
+                "wholesome": 15,
+                "animated": 5,
+                "improv": 80,
+                "excite": 66,
+                "demographic": 90,
+                "observational": 80
+            },
+            "humour": {
+                "toilet": 100,
+                "surreal": 100,
+                "wordplay": 80,
+                "political": 25,
+                "satirical": 100
+            }
+        },
+        {
+            "name": "Boy Boy",
+            "link": "https://www.youtube.com/@Boy_Boy",
+            "attention": {
+                "foreground": 100,
+                "surprise": 80,
+                "story": 0,
+                "length": 80,
+                "pace": 41
+            },
+            "style": {
+                "wholesome": 10,
+                "animated": 0,
+                "improv": 25,
+                "excite": 75,
+                "demographic": 100,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 20,
+                "surreal": 10,
+                "wordplay": 30,
+                "political": 100,
+                "satirical": 80
+            }
+        },
+        {
+            "name": "Sebastian Lague",
+            "link": "https://www.youtube.com/@SebastianLague",
+            "attention": {
+                "foreground": 90,
+                "length": 85,
+                "story": 20,
+                "surprise": 75
+            },
+            "style": {
+                "excite": 10,
+                "think": 98,
+                "wholesome": 100,
+                "animated": 70,
+                "improv": 0,
+                "demographic": 60,
+                "observational": 70
+            },
+            "humour": {
+                "toilet": 0,
+                "surreal": 0,
+                "wordplay": 25,
+                "political": 5,
+                "satirical": 5
+            }
+        },
+        {
+            "name": "MrBeast",
+            "link": "https://www.youtube.com/@MrBeast",
+            "attention": {
+                "foreground": 20,
+                "surprise": 35,
+                "story": 0,
+                "length": 25,
+                "pace": 75
+            },
+            "style": {
+                "excite": 90,
+                "think": 25,
+                "wholesome": 75,
+                "animated": 0,
+                "improv": 25,
+                "demographic": 0,
+                "observational": 36
+            },
+            "humour": {
+                "toilet": 18,
+                "surreal": 75,
+                "wordplay": 15,
+                "political": 30,
+                "satirical": 14
+            }
+        },
+        {
+            "name": "Michael Cusack",
+            "link": "https://www.youtube.com/@MichaelCusackCartoons",
+            "attention": {
+                "foreground": 90,
+                "surprise": 81,
+                "story": 72,
+                "length": 14,
+                "pace": 41,
+                "observational": 87
+            },
+            "humour": {
+                "wordplay": 84,
+                "surreal": 77,
+                "toilet": 73,
+                "political": 70,
+                "satirical": 100
+            },
+            "style": {
+                "demographic": 71,
+                "improv": 17,
+                "animated": 100,
+                "wholesome": 13,
+                "think": 12,
+                "excite": 40
+            }
+        },
+        {
+            "name": "DIY Perks",
+            "link": "https://www.youtube.com/@DIYPerks",
+            "style": {
+                "think": 100,
+                "wholesome": 100,
+                "animated": 0,
+                "improv": 50,
+                "demographic": 75,
+                "excite": 10,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 10,
+                "surreal": 0,
+                "wordplay": 15,
+                "political": 0,
+                "satirical": 0
+            },
+            "attention": {
+                "pace": 15,
+                "length": 50,
+                "story": 0,
+                "surprise": 75,
+                "foreground": 70
+            }
+        },
+        {
+            "name": "Ben Eater",
+            "link": "https://www.youtube.com/@BenEater",
+            "attention": {
+                "foreground": 95,
+                "pace": 25,
+                "length": 80,
+                "story": 70,
+                "surprise": 30
+            },
+            "style": {
+                "excite": 35,
+                "think": 100,
+                "wholesome": 100,
+                "animated": 0,
+                "improv": 20,
+                "demographic": 80,
+                "observational": 90
+            },
+            "humour": {
+                "toilet": 0,
+                "surreal": 0,
+                "wordplay": 7,
+                "political": 0,
+                "satirical": 0
+            }
+        },
+        {
+            "name": "Max Fosh",
+            "link": "https://www.youtube.com/@MaxFosh",
+            "attention": {
+                "foreground": 90,
+                "surprise": 100,
+                "story": 0,
+                "length": 25,
+                "pace": 80
+            },
+            "style": {
+                "excite": 80,
+                "think": 25,
+                "wholesome": 35,
+                "animated": 0,
+                "improv": 60,
+                "demographic": 40,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 60,
+                "surreal": 70,
+                "wordplay": 70,
+                "political": 40,
+                "satirical": 100
+            }
+        },
+        {
+            "name": "hbomberguy",
+            "link": "https://www.youtube.com/@hbomberguy",
+            "attention": {
+                "foreground": 40,
+                "surprise": 100,
+                "story": 10,
+                "length": 100,
+                "pace": 10
+            },
+            "style": {
+                "excite": 25,
+                "think": 70,
+                "wholesome": 25,
+                "animated": 35,
+                "improv": 0,
+                "demographic": 90,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 65,
+                "surreal": 30,
+                "wordplay": 75,
+                "political": 100,
+                "satirical": 70
+            }
+        },
+        {
+            "name": "Tsoding Daily",
+            "link": "https://www.youtube.com/@TsodingDaily",
+            "attention": {
+                "foreground": 65,
+                "surprise": 65,
+                "story": 85,
+                "length": 100,
+                "pace": 50
+            },
+            "style": {
+                "improv": 90,
+                "animated": 10,
+                "wholesome": 70,
+                "think": 70,
+                "excite": 40,
+                "demographic": 80,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 25,
+                "surreal": 20,
+                "wordplay": 70,
+                "political": 30,
+                "satirical": 40
+            }
+        },
+        {
+            "name": "Mattias Krantz",
+            "link": "https://www.youtube.com/@Mattiaskrantz",
+            "attention": {
+                "foreground": 30,
+                "surprise": 70,
+                "story": 40,
+                "length": 60,
+                "pace": 40
+            },
+            "style": {
+                "excite": 40,
+                "think": 30,
+                "wholesome": 70,
+                "animated": 0,
+                "improv": 40,
+                "demographic": 25,
+                "observational": 30
+            },
+            "humour": {
+                "toilet": 5,
+                "surreal": 35,
+                "wordplay": 40,
+                "political": 0,
+                "satirical": 50
+            }
+        }
+    ]
+}

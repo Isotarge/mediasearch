@@ -2,11 +2,13 @@
   import MoodSliderCategory from "./components/MoodSliderCategory.svelte";
   import Music from "./Music.json";
   import TV from "./TV.json";
+  import YouTube from "./YouTube.json";
 
-  let mediaType = "TV";
+  let mediaType = "YouTube";
   const media = {
     Music,
     TV,
+    YouTube,
   };
   let pageNumber = 0;
   const recommendationsPerPage = 10;
