@@ -412,6 +412,303 @@
                 "political": 0,
                 "satirical": 50
             }
+        },
+        {
+            "name": "suckerpinch (tom7)",
+            "link": "https://www.youtube.com/@tom7",
+            "humour": {
+                "toilet": 15,
+                "surreal": 60,
+                "wordplay": 95,
+                "political": 37,
+                "satirical": 75
+            },
+            "style": {
+                "observational": 88,
+                "demographic": 70,
+                "improv": 40,
+                "animated": 25,
+                "wholesome": 45,
+                "think": 70,
+                "excite": 35
+            },
+            "attention": {
+                "pace": 35,
+                "length": 85,
+                "story": 15,
+                "surprise": 85,
+                "foreground": 60
+            }
+        },
+        {
+            "name": "Fairbairn Films",
+            "link": "https://www.youtube.com/@FairbairnFilms",
+            "humour": {
+                "wordplay": 100,
+                "political": 25,
+                "satirical": 100,
+                "surreal": 15,
+                "toilet": 65
+            },
+            "style": {
+                "observational": 100,
+                "demographic": 16,
+                "improv": 40,
+                "animated": 0,
+                "wholesome": 50,
+                "think": 30,
+                "excite": 60
+            },
+            "attention": {
+                "pace": 85,
+                "length": 0,
+                "story": 0,
+                "surprise": 95,
+                "foreground": 100
+            }
+        },
+        {
+            "name": "Asianometry",
+            "link": "https://www.youtube.com/@Asianometry",
+            "attention": {
+                "foreground": 100,
+                "surprise": 60,
+                "story": 25,
+                "length": 60,
+                "pace": 25
+            },
+            "style": {
+                "think": 100,
+                "excite": 25,
+                "animated": 40,
+                "improv": 10,
+                "demographic": 100,
+                "observational": 100,
+                "wholesome": 30
+            },
+            "humour": {
+                "political": 100,
+                "satirical": 0,
+                "wordplay": 10,
+                "surreal": 0,
+                "toilet": 0
+            }
+        },
+        {
+            "name": "I did a thing",
+            "link": "https://www.youtube.com/@Ididathing",
+            "attention": {
+                "foreground": 70,
+                "surprise": 94,
+                "story": 0,
+                "length": 49,
+                "pace": 33
+            },
+            "style": {
+                "excite": 33,
+                "think": 13,
+                "wholesome": 6,
+                "animated": 0,
+                "improv": 36,
+                "demographic": 63,
+                "observational": 55
+            },
+            "humour": {
+                "toilet": 84,
+                "surreal": 76,
+                "wordplay": 39,
+                "political": 33,
+                "satirical": 58
+            }
+        },
+        {
+            "name": "Glorb",
+            "link": "https://www.youtube.com/@glorbworldwide",
+            "attention": {
+                "foreground": 10,
+                "surprise": 30,
+                "story": 75,
+                "length": 0,
+                "pace": 60
+            },
+            "style": {
+                "excite": 80,
+                "think": 0,
+                "wholesome": 18,
+                "animated": 100,
+                "improv": 0,
+                "demographic": 100,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 100,
+                "surreal": 100,
+                "wordplay": 100,
+                "political": 10,
+                "satirical": 100
+            }
+        },
+        {
+            "name": "KASH KRABS RECORDS",
+            "link": "https://www.youtube.com/@KASHKRABS",
+            "attention": {
+                "foreground": 10,
+                "surprise": 30,
+                "story": 75,
+                "length": 0,
+                "pace": 60
+            },
+            "style": {
+                "excite": 80,
+                "think": 0,
+                "wholesome": 18,
+                "animated": 100,
+                "improv": 0,
+                "demographic": 100,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 100,
+                "surreal": 100,
+                "wordplay": 100,
+                "political": 10,
+                "satirical": 100
+            }
+        },
+        {
+            "name": "SkyCorp Home Video",
+            "link": "https://www.youtube.com/@skycorphomevideo",
+            "attention": {
+                "length": 10,
+                "pace": 30,
+                "story": 15,
+                "surprise": 60,
+                "foreground": 100
+            },
+            "humour": {
+                "toilet": 85,
+                "surreal": 85,
+                "political": 40,
+                "wordplay": 60,
+                "satirical": 100
+            },
+            "style": {
+                "observational": 90,
+                "demographic": 100,
+                "improv": 0,
+                "animated": 40,
+                "wholesome": 0,
+                "think": 19,
+                "excite": 55
+            }
+        },
+        {
+            "name": "Folding Ideas",
+            "link": "https://www.youtube.com/@FoldingIdeas",
+            "attention": {
+                "foreground": 100,
+                "surprise": 75,
+                "story": 10,
+                "length": 100,
+                "pace": 10
+            },
+            "style": {
+                "excite": 35,
+                "think": 100,
+                "wholesome": 32,
+                "animated": 10,
+                "improv": 0,
+                "demographic": 100,
+                "observational": 100
+            },
+            "humour": {
+                "political": 100,
+                "satirical": 10,
+                "wordplay": 25,
+                "surreal": 10,
+                "toilet": 15
+            }
+        },
+        {
+            "name": "friendlyjordies",
+            "link": "https://www.youtube.com/@friendlyjordies",
+            "humour": {
+                "toilet": 100,
+                "surreal": 14,
+                "wordplay": 27,
+                "political": 100,
+                "satirical": 65
+            },
+            "style": {
+                "observational": 66,
+                "demographic": 56,
+                "improv": 34,
+                "animated": 6,
+                "wholesome": 29,
+                "think": 60,
+                "excite": 81
+            },
+            "attention": {
+                "pace": 33,
+                "length": 60,
+                "story": 41,
+                "surprise": 39,
+                "foreground": 94
+            }
+        },
+        {
+            "name": "Jay Foreman",
+            "link": "https://www.youtube.com/@JayForeman",
+            "humour": {
+                "political": 85,
+                "wordplay": 100,
+                "satirical": 77,
+                "surreal": 25,
+                "toilet": 40
+            },
+            "style": {
+                "observational": 100,
+                "demographic": 30,
+                "improv": 0,
+                "animated": 15,
+                "wholesome": 85,
+                "think": 74,
+                "excite": 66
+            },
+            "attention": {
+                "pace": 100,
+                "length": 44,
+                "story": 5,
+                "surprise": 100,
+                "foreground": 100
+            }
+        },
+        {
+            "name": "Pokémon Challenges",
+            "link": "https://www.youtube.com/@PokemonChallenges",
+            "attention": {
+                "foreground": 60,
+                "surprise": 39,
+                "story": 68,
+                "length": 100,
+                "pace": 38
+            },
+            "style": {
+                "excite": 34,
+                "think": 43,
+                "wholesome": 63,
+                "animated": 44,
+                "improv": 45,
+                "demographic": 28,
+                "observational": 62
+            },
+            "humour": {
+                "toilet": 33,
+                "surreal": 57,
+                "wordplay": 72,
+                "political": 21,
+                "satirical": 57
+            }
         }
     ]
 }
