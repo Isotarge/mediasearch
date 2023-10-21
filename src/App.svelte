@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import MoodSliderCategory from "./components/MoodSliderCategory.svelte";
   import Music from "./Music.json";
   import TV from "./TV.json";
@@ -15,7 +16,6 @@
   let matches = [];
   const currentSearchSettings = {};
 
-  $: sliders = media[mediaType].sliders;
   $: recommendations = media[mediaType].recommendations;
 
   // Pagination
@@ -43,10 +43,13 @@
       detail: { categoryName, name, value, ignore },
     } = e;
 
-    if (!(categoryName in currentSearchSettings)) {
-      currentSearchSettings[categoryName] = {};
+    if (!(mediaType in currentSearchSettings)) {
+      currentSearchSettings[mediaType] = {};
     }
-    currentSearchSettings[categoryName][name] = {
+    if (!(categoryName in currentSearchSettings[mediaType])) {
+      currentSearchSettings[mediaType][categoryName] = {};
+    }
+    currentSearchSettings[mediaType][categoryName][name] = {
       value,
       ignore,
     };
@@ -55,14 +58,15 @@
 
   function isEnabled(categoryName, sliderName) {
     return (
-      !currentSearchSettings?.[categoryName]?.[sliderName]?.ignore ?? false
+      !currentSearchSettings?.[mediaType]?.[categoryName]?.[sliderName]
+        ?.ignore ?? false
     );
   }
 
   function checkSingleStat(media, categoryName, sliderName) {
     if (categoryName in media && sliderName in media[categoryName]) {
       const difference =
-        currentSearchSettings[categoryName][sliderName].value -
+        currentSearchSettings[mediaType][categoryName][sliderName].value -
         media[categoryName][sliderName];
       return Math.abs(difference);
     }
@@ -73,8 +77,8 @@
   function computeMediaScore(media) {
     let totalDifference = 0;
     let numEnabledSliders = 0;
-    for (const categoryName in currentSearchSettings) {
-      for (const sliderName in currentSearchSettings[categoryName]) {
+    for (const categoryName in currentSearchSettings[mediaType]) {
+      for (const sliderName in currentSearchSettings[mediaType][categoryName]) {
         if (isEnabled(categoryName, sliderName)) {
           numEnabledSliders++;
           totalDifference += checkSingleStat(media, categoryName, sliderName);
@@ -99,6 +103,7 @@
       })
       .sort((a, b) => a.score - b.score);
   }
+  onMount(searchMedia);
 
   // Editing
   let editMode = false;
@@ -111,13 +116,13 @@
       newRecommendation.link = newLink;
     }
     for (const categoryName in currentSearchSettings) {
-      for (const sliderName in currentSearchSettings[categoryName]) {
+      for (const sliderName in currentSearchSettings[mediaType][categoryName]) {
         if (isEnabled(categoryName, sliderName)) {
           if (!(categoryName in newRecommendation)) {
             newRecommendation[categoryName] = {};
           }
           newRecommendation[categoryName][sliderName] =
-            currentSearchSettings[categoryName][sliderName].value;
+            currentSearchSettings[mediaType][categoryName][sliderName].value;
         }
       }
     }
@@ -146,15 +151,15 @@
   <p>
     This tool will take your feelings, desires, and style preferences, and
     recommend some media it thinks you'll like.
-    <br />It was written by Isotarge as an exercise in learning
-    <strike>Vue</strike> Svelte. Hope you enjoy!
+    <br />It was written by Isotarge as an exercise in learning Svelte. Hope you
+    enjoy!
   </p>
 </header>
 <main id="panel-container">
   <div>
-    <select bind:value={mediaType}>
-      {#each Object.entries(media) as _media}
-        <option>{_media[0]}</option>
+    <select bind:value={mediaType} on:change={searchMedia}>
+      {#each Object.keys(media) as _media}
+        <option>{_media}</option>
       {/each}
     </select>
     <label for="editMode">Edit Mode</label>
@@ -170,12 +175,14 @@
       <br />
       <button on:click={exportJSON}>Export Recommendations</button>
     {/if}
-    {#each Object.entries(sliders) as slider}
-      <MoodSliderCategory
-        categoryName={slider[0]}
-        sliders={slider[1]}
-        on:signalRecomputeRecommendations={updateSearchSetting}
-      />
+    {#each Object.entries(media[mediaType].sliders) as slider}
+      {#key mediaType + slider[0]}
+        <MoodSliderCategory
+          categoryName={slider[0]}
+          sliders={slider[1]}
+          on:signalRecomputeRecommendations={updateSearchSetting}
+        />
+      {/key}
     {/each}
   </div>
   <div>

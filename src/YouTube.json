@@ -709,6 +709,87 @@
                 "political": 21,
                 "satirical": 57
             }
+        },
+        {
+            "name": "Camping With Steve",
+            "link": "https://www.youtube.com/@campingwithsteve",
+            "attention": {
+                "foreground": 36,
+                "surprise": 33,
+                "story": 14,
+                "length": 71,
+                "pace": 9
+            },
+            "style": {
+                "excite": 25,
+                "think": 15,
+                "wholesome": 82,
+                "animated": 0,
+                "improv": 100,
+                "demographic": 75,
+                "observational": 81
+            },
+            "humour": {
+                "toilet": 14,
+                "surreal": 5,
+                "wordplay": 20,
+                "political": 15,
+                "satirical": 0
+            }
+        },
+        {
+            "name": "Andreas Kling",
+            "link": "https://www.youtube.com/@awesomekling",
+            "attention": {
+                "foreground": 85,
+                "surprise": 40,
+                "story": 80,
+                "length": 100,
+                "pace": 26
+            },
+            "style": {
+                "excite": 26,
+                "think": 85,
+                "wholesome": 100,
+                "animated": 20,
+                "improv": 65,
+                "demographic": 75,
+                "observational": 100
+            },
+            "humour": {
+                "toilet": 0,
+                "surreal": 15,
+                "wordplay": 15,
+                "political": 15,
+                "satirical": 0
+            }
+        },
+        {
+            "name": "Doug DeMuro",
+            "link": "https://www.youtube.com/@DougDeMuro",
+            "attention": {
+                "foreground": 17,
+                "surprise": 24,
+                "story": 11,
+                "length": 75,
+                "pace": 38
+            },
+            "style": {
+                "excite": 66,
+                "think": 39,
+                "wholesome": 78,
+                "animated": 0,
+                "improv": 62,
+                "demographic": 36,
+                "observational": 68
+            },
+            "humour": {
+                "toilet": 8,
+                "surreal": 9,
+                "wordplay": 60,
+                "political": 0,
+                "satirical": 0
+            }
         }
     ]
 }
