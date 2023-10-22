@@ -2,12 +2,16 @@
   import { createEventDispatcher } from "svelte";
   const dispatch = createEventDispatcher();
 
-  let value = 50;
-  let ignore = true;
   export let slider;
+  export let categoryName;
+  export let defaultValue;
+  
+  let ignore = true;
+  let value = defaultValue;
 
   function onChange() {
     dispatch("signalRecomputeRecommendations", {
+      categoryName,
       name: slider.name,
       value,
       ignore,
@@ -20,9 +24,9 @@
   }
 </script>
 
-<div>
-  Ignore
-  <input type="checkbox" bind:checked={ignore} on:change={onChange} />
+<form>
+  <label for="ignoreCheckbox">Ignore</label>
+  <input id="ignoreCheckbox" type="checkbox" bind:checked={ignore} on:change={onChange} />
   <span class="moodLabel">{slider.low}</span>
   <input
     type="range"
@@ -34,7 +38,7 @@
   />
   <span>{value}</span>
   <span class="moodLabel">{slider.high}</span>
-</div>
+</form>
 
 <style>
   .moodLabel {

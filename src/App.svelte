@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import MoodSliderCategory from "./components/MoodSliderCategory.svelte";
+  import MoodSlider from "./components/MoodSlider.svelte";
   import Music from "./Music.json";
   import TV from "./TV.json";
   import YouTube from "./YouTube.json";
@@ -16,10 +16,10 @@
   let matches = [];
   const currentSearchSettings = {};
 
-  $: recommendations = media[mediaType].recommendations;
-
   // Pagination
-  $: lastPage = Math.floor(recommendations.length / recommendationsPerPage);
+  $: lastPage = Math.floor(
+    media[mediaType].recommendations.length / recommendationsPerPage
+  );
   $: paginatedMatches = matches.slice(
     pageNumber * recommendationsPerPage,
     (pageNumber + 1) * recommendationsPerPage
@@ -63,6 +63,13 @@
     );
   }
 
+  function getDefaultValue(categoryName, sliderName) {
+    return (
+      currentSearchSettings?.[mediaType]?.[categoryName]?.[sliderName]
+        ?.value ?? 50
+    );
+  }
+
   function checkSingleStat(media, categoryName, sliderName) {
     if (categoryName in media && sliderName in media[categoryName]) {
       const difference =
@@ -94,7 +101,7 @@
 
   function searchMedia() {
     // Compute the new matches
-    matches = recommendations
+    matches = media[mediaType].recommendations
       .map((media) => {
         return {
           media: media,
@@ -115,7 +122,7 @@
     if (newLink.length > 0) {
       newRecommendation.link = newLink;
     }
-    for (const categoryName in currentSearchSettings) {
+    for (const categoryName in currentSearchSettings[mediaType]) {
       for (const sliderName in currentSearchSettings[mediaType][categoryName]) {
         if (isEnabled(categoryName, sliderName)) {
           if (!(categoryName in newRecommendation)) {
@@ -127,7 +134,7 @@
       }
     }
     console.log(newRecommendation);
-    recommendations.push(newRecommendation);
+    media[mediaType].recommendations.push(newRecommendation);
   }
 
   function exportJSON() {
@@ -156,32 +163,40 @@
   </p>
 </header>
 <main id="panel-container">
-  <div>
-    <select bind:value={mediaType} on:change={searchMedia}>
+  <div id="slider-container">
+    <select
+      id="mediaTypeDropdown"
+      bind:value={mediaType}
+      on:change={searchMedia}
+    >
       {#each Object.keys(media) as _media}
         <option>{_media}</option>
       {/each}
     </select>
     <label for="editMode">Edit Mode</label>
-    <input name="editMode" type="checkbox" bind:checked={editMode} />
+    <input id="editMode" type="checkbox" bind:checked={editMode} />
     {#if editMode}
       <br />
       <h2>New Recommendation</h2>
       <label for="newName">Name</label>
-      <input name="newName" type="text" bind:value={newName} />
+      <input id="newName" type="text" bind:value={newName} />
       <label for="newLink">Link</label>
-      <input name="newLink" type="text" bind:value={newLink} />
+      <input id="newLink" type="text" bind:value={newLink} />
       <button on:click={addRecommendation}>Add Recommendation</button>
       <br />
       <button on:click={exportJSON}>Export Recommendations</button>
     {/if}
-    {#each Object.entries(media[mediaType].sliders) as slider}
-      {#key mediaType + slider[0]}
-        <MoodSliderCategory
-          categoryName={slider[0]}
-          sliders={slider[1]}
-          on:signalRecomputeRecommendations={updateSearchSetting}
-        />
+    {#each Object.entries(media[mediaType].sliders) as _slider}
+      {#key mediaType + _slider[0]}
+        <h2>{_slider[0].charAt(0).toUpperCase() + _slider[0].slice(1)}</h2>
+        {#each _slider[1] as slider}
+          <MoodSlider
+            {slider}
+            defaultValue={getDefaultValue(_slider[0], slider.name)}
+            categoryName={_slider[0]}
+            on:signalRecomputeRecommendations={updateSearchSetting}
+          />
+        {/each}
       {/key}
     {/each}
   </div>
@@ -230,6 +245,9 @@
   #recommendation-table-container {
     width: 100%;
     height: 90%;
+  }
+  #slider-container {
+    user-select: none;
   }
   #recommendation-table {
     width: 100%;
