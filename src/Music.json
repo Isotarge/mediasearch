@@ -1,6 +1,7 @@
 {
 	"sliders": {
-		"feeling": [{
+		"feeling": [
+			{
 				"name": "happy",
 				"low": "Sad",
 				"high": "Happy"
@@ -16,7 +17,8 @@
 				"high": "Focused"
 			}
 		],
-		"desire": [{
+		"desire": [
+			{
 				"name": "happiness",
 				"low": "Sad",
 				"high": "Happy"
@@ -32,7 +34,8 @@
 				"high": "Sexy"
 			}
 		],
-		"style": [{
+		"style": [
+			{
 				"name": "lyrics",
 				"low": "Instrumental",
 				"high": "Lyrical"
@@ -59,7 +62,8 @@
 			}
 		]
 	},
-	"recommendations": [{
+	"recommendations": [
+		{
 			"name": "Zedd - Clarity (Headhunterz Remix)",
 			"link": "https://www.youtube.com/watch?v=GvdeeuFPwUM",
 			"feeling": {
@@ -2727,6 +2731,27 @@
 				"age": 0,
 				"speed": 70,
 				"lyrics": 90
+			}
+		},
+		{
+			"name": "100 Gecs",
+			"link": "https://www.youtube.com/watch?v=z97qLNXeAMQ",
+			"feeling": {
+				"happy": 90,
+				"conformist": 10,
+				"focused": 75
+			},
+			"desire": {
+				"happiness": 95,
+				"anger": 25,
+				"sexy": 40
+			},
+			"style": {
+				"lyrics": 80,
+				"electronic": 90,
+				"melodic": 45,
+				"age": 10,
+				"speed": 60
 			}
 		}
 	]

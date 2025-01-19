@@ -11,7 +11,7 @@
 		}, {
 			"name": "story",
 			"low": "Episodic",
-			"high": "Serial"
+			"high": "Continuous"
 		}],
 		"style": [{
 			"name": "wholesome",

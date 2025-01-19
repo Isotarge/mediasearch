@@ -1,0 +1,293 @@
+{
+	"sliders": {
+		"feeling": [
+			{
+				"name": "happy",
+				"low": "Sad",
+				"high": "Happy"
+			},
+			{
+				"name": "conformist",
+				"low": "Contrarian",
+				"high": "Conformist"
+			},
+			{
+				"name": "focused",
+				"low": "Tired",
+				"high": "Focused"
+			}
+		],
+		"style": [
+			{
+				"name": "story",
+				"low": "Episodic",
+				"high": "Continuous"
+			},
+			{
+				"name": "silly",
+				"low": "Serious",
+				"high": "Silly"
+			},
+			{
+				"name": "wholesome",
+				"low": "Dark",
+				"high": "Wholesome"
+			},
+			{
+				"name": "improv",
+				"low": "Scripted",
+				"high": "Improvised"
+			},
+			{
+				"name": "think",
+				"low": "Feeling",
+				"high": "Thinking"
+			},
+			{
+				"name": "political",
+				"low": "Not political",
+				"high": "Political"
+			}
+		]
+	},
+	"recommendations": [
+		{
+			"name": "bigsofttitty.png",
+			"link": "https://podcasts.apple.com/au/podcast/bigsofttitty-png/id1332959121",
+			"feeling": {
+				"happy": 60,
+				"conformist": 30,
+				"focused": 30
+			},
+			"style": {
+				"story": 25,
+				"silly": 90,
+				"wholesome": 31,
+				"improv": 80,
+				"think": 35,
+				"political": 25
+			}
+		},
+		{
+			"name": "Boonta Vista",
+			"link": "https://podcasts.apple.com/au/podcast/boonta-vista/id1240541605",
+			"feeling": {
+				"happy": 70,
+				"conformist": 30,
+				"focused": 45
+			},
+			"style": {
+				"story": 20,
+				"silly": 75,
+				"wholesome": 45,
+				"improv": 65,
+				"think": 35,
+				"political": 40
+			}
+		},
+		{
+			"name": "Molly White's Citation Needed",
+			"link": "https://podcasts.apple.com/us/podcast/molly-whites-citation-needed/id1719025552",
+			"feeling": {
+				"happy": 10,
+				"conformist": 35,
+				"focused": 60
+			},
+			"style": {
+				"story": 60,
+				"silly": 5,
+				"wholesome": 30,
+				"improv": 0,
+				"think": 100,
+				"political": 100
+			}
+		},
+		{
+			"name": "Accidental Tech Podcast",
+			"link": "https://podcasts.apple.com/us/podcast/accidental-tech-podcast/id617416468",
+			"feeling": {
+				"happy": 70,
+				"conformist": 88,
+				"focused": 35
+			},
+			"style": {
+				"story": 60,
+				"silly": 40,
+				"wholesome": 80,
+				"improv": 55,
+				"think": 45,
+				"political": 70
+			}
+		},
+		{
+			"name": "Aunty Donna Podcast",
+			"link": "https://podcasts.apple.com/au/podcast/aunty-donna-podcast/id1143557564",
+			"feeling": {
+				"happy": 45,
+				"conformist": 30,
+				"focused": 60
+			},
+			"style": {
+				"story": 20,
+				"silly": 100,
+				"wholesome": 20,
+				"improv": 100,
+				"think": 10,
+				"political": 30
+			}
+		},
+		{
+			"name": "The Skeptics' Guide to the Universe",
+			"link": "https://podcasts.apple.com/us/podcast/the-skeptics-guide-to-the-universe/id128859062",
+			"feeling": {
+				"happy": 60,
+				"conformist": 100,
+				"focused": 80
+			},
+			"style": {
+				"story": 40,
+				"silly": 60,
+				"wholesome": 65,
+				"improv": 40,
+				"think": 80,
+				"political": 65
+			}
+		},
+		{
+			"name": "Hello Internet",
+			"link": "https://podcasts.apple.com/us/podcast/hello-internet/id811377230",
+			"feeling": {
+				"happy": 80,
+				"conformist": 60,
+				"focused": 60
+			},
+			"style": {
+				"story": 70,
+				"silly": 75,
+				"wholesome": 90,
+				"improv": 65,
+				"think": 35,
+				"political": 15
+			}
+		},
+		{
+			"name": "The Unmade Podcast",
+			"link": "https://podcasts.apple.com/au/podcast/the-unmade-podcast/id1274023400",
+			"style": {
+				"think": 20,
+				"political": 25,
+				"improv": 65,
+				"wholesome": 90,
+				"silly": 90,
+				"story": 55
+			},
+			"feeling": {
+				"focused": 25,
+				"conformist": 100,
+				"happy": 80
+			}
+		},
+		{
+			"name": "Citations Needed",
+			"link": "https://podcasts.apple.com/au/podcast/citations-needed/id1258545975",
+			"feeling": {
+				"happy": 10,
+				"conformist": 10,
+				"focused": 100
+			},
+			"style": {
+				"story": 40,
+				"silly": 0,
+				"wholesome": 0,
+				"improv": 25,
+				"think": 100,
+				"political": 100
+			}
+		},
+		{
+			"name": "TRASHFUTURE",
+			"link": "https://podcasts.apple.com/au/podcast/trashfuture/id1261944206",
+			"feeling": {
+				"happy": 25,
+				"conformist": 0,
+				"focused": 75
+			},
+			"style": {
+				"story": 30,
+				"silly": 75,
+				"wholesome": 30,
+				"improv": 65,
+				"think": 70,
+				"political": 100
+			}
+		},
+		{
+			"name": "Decoding the Gurus",
+			"link": "https://podcasts.apple.com/au/podcast/decoding-the-gurus/id1531266667",
+			"style": {
+				"story": 0,
+				"silly": 35,
+				"wholesome": 15,
+				"improv": 40,
+				"think": 65,
+				"political": 100
+			},
+			"feeling": {
+				"focused": 55,
+				"conformist": 45,
+				"happy": 25
+			}
+		},
+		{
+			"name": "Masters of Our Domain",
+			"link": "https://podcasts.apple.com/au/podcast/masters-of-our-domain/id1548223996",
+			"feeling": {
+				"happy": 60,
+				"conformist": 35,
+				"focused": 30
+			},
+			"style": {
+				"story": 60,
+				"silly": 80,
+				"wholesome": 40,
+				"improv": 90,
+				"think": 30,
+				"political": 60
+			}
+		},
+		{
+			"name": "Skeptoid",
+			"link": "https://podcasts.apple.com/au/podcast/skeptoid/id203844864",
+			"feeling": {
+				"happy": 65,
+				"conformist": 35,
+				"focused": 65
+			},
+			"style": {
+				"story": 0,
+				"silly": 25,
+				"wholesome": 55,
+				"improv": 10,
+				"think": 80,
+				"political": 60
+			}
+		},
+		{
+			"name": "Tool-Assisted Podcast",
+			"link": "https://podcasts.apple.com/au/podcast/tool-assisted-podcast/id1453315996",
+			"feeling": {
+				"happy": 60,
+				"conformist": 75,
+				"focused": 80
+			},
+			"style": {
+				"story": 20,
+				"silly": 60,
+				"wholesome": 75,
+				"improv": 75,
+				"think": 85,
+				"political": 5
+			}
+		}
+	]
+}

@@ -14,7 +14,7 @@
 			{
 				"name": "story",
 				"low": "Episodic",
-				"high": "Serial"
+				"high": "Continuous"
 			},
 			{
 				"name": "length",

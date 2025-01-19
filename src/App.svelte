@@ -4,12 +4,14 @@
   import Music from "./Music.json";
   import TV from "./TV.json";
   import YouTube from "./YouTube.json";
+  import Podcast from "./Podcast.json";
 
-  let mediaType = "YouTube";
+  let mediaType = "Podcast";
   const media = {
     Music,
     TV,
     YouTube,
+    Podcast,
   };
   let pageNumber = 0;
   const recommendationsPerPage = 10;
